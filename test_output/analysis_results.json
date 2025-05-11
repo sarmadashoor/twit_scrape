@@ -1,0 +1,43 @@
+{
+  "tweetCount": 12,
+  "sampleTweetStructure": [
+    "id",
+    "text",
+    "created_at",
+    "retweet_count",
+    "favorite_count",
+    "reply_count",
+    "is_reply",
+    "is_retweet",
+    "language",
+    "user",
+    "entities",
+    "url"
+  ],
+  "replyFieldsFound": {
+    "is_reply": {
+      "exists": true,
+      "value": false
+    },
+    "in_reply_to_status_id": {
+      "exists": false,
+      "value": null
+    },
+    "in_reply_to_user_id": {
+      "exists": false,
+      "value": null
+    },
+    "reply_count": {
+      "exists": true,
+      "value": 105
+    },
+    "conversation_id": {
+      "exists": false,
+      "value": null
+    }
+  },
+  "selfRepliesFound": 0,
+  "sampleSelfReply": null,
+  "sampleParentTweet": null,
+  "threadCount": 0
+}

@@ -1,0 +1,64 @@
+{
+  "@gregisenberg": {
+    "name": "Greg Isenberg",
+    "handle": "@gregisenberg",
+    "userId": "1274910347090284544",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No timeline data",
+    "sampleTweets": []
+  },
+  "@heybarsee": {
+    "name": "Barsee",
+    "handle": "@heybarsee",
+    "userId": "1353805805088116736",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No timeline data",
+    "sampleTweets": []
+  },
+  "@jspeiser": {
+    "name": "Justin Speiser",
+    "handle": "@jspeiser",
+    "userId": "17309166",
+    "accessible": true,
+    "tweetCount": 20,
+    "error": null,
+    "sampleTweets": [
+      {
+        "id": "517792626724982784",
+        "text": "38028: Severe Weather Statement issued October 02 at 4:41PM CDT until October 02 at 5:00PM CDT by NWS Memphis http://t.co/BXQXyjcYw1",
+        "created_at": "Thu Oct 02 21:45:56 +0000 2014",
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0
+      },
+      {
+        "id": "517790229462142976",
+        "text": "38028: Severe Thunderstorm Warning issued October 02 at 4:24PM CDT until October 02 at 5:00PM CDT by NWS Memphis http://t.co/3B4LDJTIzV",
+        "created_at": "Thu Oct 02 21:36:25 +0000 2014",
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0
+      }
+    ]
+  },
+  "@bentossell": {
+    "name": "Ben Tossell",
+    "handle": "@bentossell",
+    "userId": "24229461",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No TimelineAddEntries instruction",
+    "sampleTweets": []
+  },
+  "@levelsio": {
+    "name": "Pieter Levels",
+    "handle": "@levelsio",
+    "userId": "1214253",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No timeline data",
+    "sampleTweets": []
+  }
+}

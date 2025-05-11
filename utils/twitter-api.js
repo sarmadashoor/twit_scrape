@@ -228,9 +228,20 @@ function extractTweetsFromResponse(response) {
               user = tweet.core.user_results.result.legacy || {};
             }
 
+            // Check for note_tweet (long tweets)
+            let fullText = tweet.legacy.full_text;
+
+            // If this is a "note tweet" (longer tweet), extract the full text from there
+            if (tweet.note_tweet &&
+                tweet.note_tweet.note_tweet_results &&
+                tweet.note_tweet.note_tweet_results.result &&
+                tweet.note_tweet.note_tweet_results.result.text) {
+              fullText = tweet.note_tweet.note_tweet_results.result.text;
+            }
+
             tweets.push({
               id: tweet.rest_id,
-              text: tweet.legacy.full_text,
+              text: fullText, // Use the full text from note_tweet when available
               created_at: tweet.legacy.created_at,
               retweet_count: tweet.legacy.retweet_count,
               favorite_count: tweet.legacy.favorite_count,

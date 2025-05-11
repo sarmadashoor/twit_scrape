@@ -1,0 +1,22 @@
+{
+  "issues": [
+    {
+      "name": "Endpoint",
+      "description": "We need to use 'INsneb6y78uXRviWsuA-Rw/TweetDetail' (exact endpoint from cURL)"
+    },
+    {
+      "name": "Parameters",
+      "description": "The cURL includes additional parameters like 'referrer' and 'controller_data'"
+    },
+    {
+      "name": "Headers",
+      "description": "The cURL includes several headers that our implementation might be missing"
+    },
+    {
+      "name": "Cookies",
+      "description": "The cURL has session cookies that our request may be missing"
+    }
+  ],
+  "recommendation": "Use a direct implementation based on the exact cURL command",
+  "alternativeApproach": "Fetch more tweets and identify self-threads using in_reply_to relationships"
+}

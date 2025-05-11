@@ -1,0 +1,2509 @@
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\.gitignore =====
+node_modules/
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\accessible_accounts.json =====
+{
+  "@gregisenberg": {
+    "name": "Greg Isenberg",
+    "handle": "@gregisenberg",
+    "userId": "1274910347090284544",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No timeline data",
+    "sampleTweets": []
+  },
+  "@heybarsee": {
+    "name": "Barsee",
+    "handle": "@heybarsee",
+    "userId": "1353805805088116736",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No timeline data",
+    "sampleTweets": []
+  },
+  "@jspeiser": {
+    "name": "Justin Speiser",
+    "handle": "@jspeiser",
+    "userId": "17309166",
+    "accessible": true,
+    "tweetCount": 20,
+    "error": null,
+    "sampleTweets": [
+      {
+        "id": "517792626724982784",
+        "text": "38028: Severe Weather Statement issued October 02 at 4:41PM CDT until October 02 at 5:00PM CDT by NWS Memphis http://t.co/BXQXyjcYw1",
+        "created_at": "Thu Oct 02 21:45:56 +0000 2014",
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0
+      },
+      {
+        "id": "517790229462142976",
+        "text": "38028: Severe Thunderstorm Warning issued October 02 at 4:24PM CDT until October 02 at 5:00PM CDT by NWS Memphis http://t.co/3B4LDJTIzV",
+        "created_at": "Thu Oct 02 21:36:25 +0000 2014",
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "reply_count": 0
+      }
+    ]
+  },
+  "@bentossell": {
+    "name": "Ben Tossell",
+    "handle": "@bentossell",
+    "userId": "24229461",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No TimelineAddEntries instruction",
+    "sampleTweets": []
+  },
+  "@levelsio": {
+    "name": "Pieter Levels",
+    "handle": "@levelsio",
+    "userId": "1214253",
+    "accessible": false,
+    "tweetCount": 0,
+    "error": "No timeline data",
+    "sampleTweets": []
+  }
+}
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\config\accounts.js =====
+// Top tier accounts
+const topTierAccounts = [
+  { handle: '@gregisenberg', tier: 'top', category: 'startup ideas, viral growth thinking' },
+  { handle: '@heybarsee', tier: 'top', category: 'AI tools, micro-SaaS ideas, prompt packs' },
+  { handle: '@jspeiser', tier: 'top', category: 'AI business models, product walkthroughs' },
+  { handle: '@bentossell', tier: 'top', category: 'Founder of Makerpad, shares AI stacks & ideas' },
+  { handle: '@levelsio', tier: 'top', category: 'Indie AI builds, experiments, automation use cases' },
+  { handle: '@thesamparr', tier: 'top', category: 'co-host of My First Million, posts idea threads' },
+  { handle: '@thisiskp_', tier: 'top', category: 'build-in-public + AI tool application insights' },
+  { handle: '@danshipper', tier: 'top', category: 'AI and productivity stack synthesis' },
+  { handle: '@tibo_maker', tier: 'top', category: 'indie maker building with AI agents' },
+  { handle: '@swyx', tier: 'top', category: 'deep AI/LLM infrastructure, founder-focused insights' }
+];
+
+// Mid tier accounts
+const midTierAccounts = [
+  { handle: '@eladgil', tier: 'mid', category: 'investor/angel with AI trend predictions' },
+  { handle: '@pranavkhaitan', tier: 'mid', category: 'ex-Google AI, startup builder' },
+  { handle: '@packym', tier: 'mid', category: 'business models + deep dives with AI integration' },
+  { handle: '@matthgray', tier: 'mid', category: 'posts actionable solopreneur/AI tips' },
+  { handle: '@simonhoiberg', tier: 'mid', category: 'SaaS-focused AI implementations' },
+  { handle: '@shivsahni', tier: 'mid', category: 'B2B founder + frequent AI concept sharing' },
+  { handle: '@zaeemk', tier: 'mid', category: 'prompt engineer + agent-builder' },
+  { handle: '@joshua_luna', tier: 'mid', category: 'growth + AI automation frameworks' },
+  { handle: '@philmohun', tier: 'mid', category: 'idea threads, tech stack breakdowns' },
+  { handle: '@alexgarcia_atx', tier: 'mid', category: 'viral growth meets AI tools' }  // Updated handle
+];
+
+module.exports = {
+  accounts: [...topTierAccounts, ...midTierAccounts],
+  getByTier: (tier) => tier === 'top' ? topTierAccounts : midTierAccounts,
+  getAll: () => [...topTierAccounts, ...midTierAccounts],
+  getCount: () => topTierAccounts.length + midTierAccounts.length
+};
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\config\filters.js =====
+module.exports = {
+  dateRange: {
+    months: 6  // Look back 6 months
+  },
+  engagement: {
+    minLikes: 50,
+    minRetweets: 10,
+    requireEither: true  // True if either likes OR retweets is sufficient
+  },
+  language: 'en',
+  excludeReplies: true,
+  excludeRetweets: true,
+  includeThreads: true  // Self-replies in threads
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\config\scraper-config.js =====
+// config/scraper-config.js
+module.exports = {
+  apiDelay: 2000,          // 2 seconds between API calls
+  maxRetries: 3,           // Try 3 times if a request fails
+  batchSize: 100,          // Save every 100 tweets
+  ocrConfidenceThreshold: 60,  // Accept OCR results with 60%+ confidence
+  maxTweetsPerAccount: 200,  // Max tweets to collect per account (added)
+  outputFormats: ['json', 'csv'],
+  tempImageDir: './data/images',
+  debugMode: true,         // Enable verbose logging for testing
+  testMode: {
+    enabled: true,         // Keep test mode for initial runs
+    tweetsPerAccount: 20,
+    maxImages: 5
+  }
+};
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\filetree.js =====
+const fs = require('fs');
+const path = require('path');
+
+const rootDir = process.cwd();
+const IGNORE_DIRS = ['node_modules', '.git'];
+
+function getFileTree(dir, prefix = '') {
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+
+  items.forEach(item => {
+    const fullPath = path.join(dir, item.name);
+    const relativePath = path.relative(rootDir, fullPath);
+
+    if (IGNORE_DIRS.includes(item.name)) return;
+
+    if (item.isDirectory()) {
+      console.log(`${prefix}📁 ${item.name}`);
+      getFileTree(fullPath, prefix + '  ');
+    } else {
+      console.log(`${prefix}📄 ${item.name}`);
+    }
+  });
+}
+
+console.log(`Project file tree for: ${rootDir}`);
+getFileTree(rootDir);
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\index.js =====
+// index.js - Main scraping script
+const fs = require('fs');
+const path = require('path');
+const { getTwitterId } = require('./utils/handle-resolver');
+const config = require('./config/scraper-config');
+const filters = require('./config/filters');
+const axios = require('axios');
+const Tesseract = require('tesseract.js');
+
+// Load accounts from configuration
+const { accounts } = require('./config/accounts');
+
+// Load progress from file or create new
+function loadProgress() {
+  const progressFile = path.join(__dirname, 'progress.json');
+  if (fs.existsSync(progressFile)) {
+    try {
+      return JSON.parse(fs.readFileSync(progressFile));
+    } catch (error) {
+      console.error('Error loading progress:', error.message);
+    }
+  }
+  return {
+    completedAccounts: [],
+    currentAccount: null,
+    lastCursor: null,
+    startTime: Date.now()
+  };
+}
+
+// Save progress to file
+function saveProgress(progress) {
+  const progressFile = path.join(__dirname, 'progress.json');
+  fs.writeFileSync(progressFile, JSON.stringify(progress, null, 2));
+}
+
+// Load Twitter auth data
+function loadAuthData() {
+  const authFilePath = path.join(__dirname, 'twitter_auth.json');
+
+  try {
+    if (!fs.existsSync(authFilePath)) {
+      console.error('Authentication file not found! Please generate it using the Chrome extension.');
+      return null;
+    }
+
+    const authData = JSON.parse(fs.readFileSync(authFilePath, 'utf8'));
+
+    // Check if auth data is valid
+    if (!authData.isValid) {
+      console.error('Authentication data is marked as invalid. Please refresh it using the Chrome extension.');
+      return null;
+    }
+
+    // Check if auth data is expired
+    const now = Date.now();
+    if (now > authData.expires) {
+      console.error('Authentication data has expired. Please refresh it using the Chrome extension.');
+      return null;
+    }
+
+    console.log('Successfully loaded authentication data:');
+    console.log('- Last updated:', new Date(authData.timestamp).toLocaleString());
+    console.log('- Expires:', new Date(authData.expires).toLocaleString());
+
+    return authData;
+  } catch (error) {
+    console.error('Error loading authentication data:', error.message);
+    return null;
+  }
+}
+
+// Scrape tweets for a user
+async function scrapeTweets(userId, count = 50, cursor = null) {
+  // Load authentication data
+  const authData = loadAuthData();
+  if (!authData) {
+    return { tweets: [], nextCursor: null };
+  }
+
+  const baseUrl = 'https://x.com/i/api/graphql/oFoUJOuykOofizcgjEX4GQ/UserTweets';
+
+  const variables = {
+    userId: userId,
+    count: count,
+    includePromotedContent: true,
+    withQuickPromoteEligibilityTweetFields: true,
+    withVoice: true
+  };
+
+  // Add cursor if provided
+  if (cursor) {
+    variables.cursor = cursor;
+  }
+
+  const features = {
+    "rweb_video_screen_enabled": false,
+    "profile_label_improvements_pcf_label_in_post_enabled": true,
+    "rweb_tipjar_consumption_enabled": true,
+    "verified_phone_label_enabled": false,
+    "creator_subscriptions_tweet_preview_api_enabled": true,
+    "responsive_web_graphql_timeline_navigation_enabled": true,
+    "responsive_web_graphql_skip_user_profile_image_extensions_enabled": false,
+    "premium_content_api_read_enabled": false,
+    "communities_web_enable_tweet_community_results_fetch": true,
+    "c9s_tweet_anatomy_moderator_badge_enabled": true,
+    "responsive_web_grok_analyze_button_fetch_trends_enabled": false,
+    "responsive_web_grok_analyze_post_followups_enabled": true,
+    "responsive_web_jetfuel_frame": false,
+    "responsive_web_grok_share_attachment_enabled": true,
+    "articles_preview_enabled": true,
+    "responsive_web_edit_tweet_api_enabled": true,
+    "graphql_is_translatable_rweb_tweet_is_translatable_enabled": true,
+    "view_counts_everywhere_api_enabled": true,
+    "longform_notetweets_consumption_enabled": true,
+    "responsive_web_twitter_article_tweet_consumption_enabled": true,
+    "tweet_awards_web_tipping_enabled": false,
+    "responsive_web_grok_show_grok_translated_post": false,
+    "responsive_web_grok_analysis_button_from_backend": true,
+    "creator_subscriptions_quote_tweet_preview_enabled": false,
+    "freedom_of_speech_not_reach_fetch_enabled": true,
+    "standardized_nudges_misinfo": true,
+    "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": true,
+    "longform_notetweets_rich_text_read_enabled": true,
+    "longform_notetweets_inline_media_enabled": true,
+    "responsive_web_grok_image_annotation_enabled": true,
+    "responsive_web_enhance_cards_enabled": false
+  };
+
+  const fieldToggles = {
+    withArticlePlainText: false
+  };
+
+  // Use the standard Bearer token if not provided in auth data
+  const bearerToken = authData.bearerToken || 'AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA';
+
+  // Create headers using auth data
+  const headers = {
+    'authorization': `Bearer ${bearerToken}`,
+    'content-type': 'application/json',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
+    'x-twitter-active-user': 'yes',
+    'x-twitter-auth-type': 'OAuth2Session',
+    'x-twitter-client-language': 'en',
+    'x-csrf-token': authData.csrfToken
+  };
+
+  try {
+    console.log(`Sending request to Twitter API for user ${userId}${cursor ? ' with cursor' : ''}...`);
+
+    const response = await axios.get(baseUrl, {
+      params: {
+        variables: JSON.stringify(variables),
+        features: JSON.stringify(features),
+        fieldToggles: JSON.stringify(fieldToggles)
+      },
+      headers: {
+        ...headers,
+        Cookie: authData.cookieString
+      }
+    });
+
+    console.log(`Response received with status ${response.status}`);
+
+    // Navigate to the correct location in the response
+    if (!response.data?.data?.user?.result?.timeline?.timeline) {
+      console.log("Failed to find timeline in response");
+      return { tweets: [], nextCursor: null };
+    }
+
+    const timelineObj = response.data.data.user.result.timeline.timeline;
+
+    // The tweets should be in the TimelineAddEntries instruction
+    if (!timelineObj.instructions || timelineObj.instructions.length < 1) {
+      console.log("Timeline instructions missing or incomplete");
+      return { tweets: [], nextCursor: null };
+    }
+
+    // Get the TimelineAddEntries instruction
+    const addEntriesInstruction = timelineObj.instructions.find(instr => instr.type === "TimelineAddEntries");
+
+    if (!addEntriesInstruction || !addEntriesInstruction.entries) {
+      console.log("No TimelineAddEntries instruction found");
+      return { tweets: [], nextCursor: null };
+    }
+
+    console.log(`Found ${addEntriesInstruction.entries.length} entries`);
+
+    // Extract cursor for pagination
+    let nextCursor = null;
+    for (const entry of addEntriesInstruction.entries) {
+      if (entry.content &&
+          entry.content.entryType === "TimelineTimelineCursor" &&
+          entry.content.cursorType === "Bottom") {
+        nextCursor = entry.content.value;
+        break;
+      }
+    }
+
+    // Process entries to find tweets
+    const tweets = [];
+    for (const entry of addEntriesInstruction.entries) {
+      // If the entry contains tweet content
+      if (entry.content && entry.content.entryType === "TimelineTimelineItem") {
+        const tweetItem = entry.content.itemContent;
+
+        // Regular tweets
+        if (tweetItem && tweetItem.tweet_results && tweetItem.tweet_results.result) {
+          const tweet = tweetItem.tweet_results.result;
+
+          // Only add if it has legacy data
+          if (tweet.legacy) {
+            // Extract user data
+            const user = tweet.core?.user_results?.result?.legacy || {};
+
+            tweets.push({
+              id: tweet.rest_id,
+              text: tweet.legacy.full_text,
+              created_at: tweet.legacy.created_at,
+              retweet_count: tweet.legacy.retweet_count,
+              favorite_count: tweet.legacy.favorite_count,
+              reply_count: tweet.legacy.reply_count,
+              is_reply: !!tweet.legacy.in_reply_to_status_id,
+              is_retweet: !!tweet.legacy.retweeted_status,
+              in_reply_to_user_id: tweet.legacy.in_reply_to_user_id,
+              in_reply_to_status_id: tweet.legacy.in_reply_to_status_id,
+              language: tweet.legacy.lang,
+              user: {
+                id: user.id_str || tweet.core?.user_results?.result?.rest_id,
+                screen_name: user.screen_name,
+                name: user.name,
+              },
+              entities: tweet.legacy.entities,
+              url: `https://twitter.com/${user.screen_name || 'i/status'}/${tweet.rest_id}`
+            });
+          }
+        }
+      }
+    }
+
+    console.log(`Successfully extracted ${tweets.length} tweets`);
+    return { tweets, nextCursor };
+
+  } catch (error) {
+    console.error("Error scraping tweets:");
+    if (error.response) {
+      console.error(`Status: ${error.response.status}`);
+      if (error.response.status === 401 || error.response.status === 403) {
+        console.error("Authentication error - please refresh your Twitter auth data!");
+      }
+    }
+    return { tweets: [], nextCursor: null };
+  }
+}
+
+// Apply filters to tweets
+function filterTweets(tweets) {
+  console.log(`Filtering ${tweets.length} tweets...`);
+
+  // Get filter settings
+  const { dateRange, engagement, language, excludeReplies, excludeRetweets, includeThreads } = filters;
+
+  // Create cutoff date
+  const cutoffDate = new Date();
+  cutoffDate.setMonth(cutoffDate.getMonth() - dateRange.months);
+
+  const filtered = tweets.filter(tweet => {
+    // Date filter
+    const tweetDate = new Date(tweet.created_at);
+    if (tweetDate < cutoffDate) {
+      return false;
+    }
+
+    // Engagement filter
+    const hasEnoughEngagement = engagement.requireEither
+      ? (tweet.favorite_count >= engagement.minLikes || tweet.retweet_count >= engagement.minRetweets)
+      : (tweet.favorite_count >= engagement.minLikes && tweet.retweet_count >= engagement.minRetweets);
+
+    if (!hasEnoughEngagement) {
+      return false;
+    }
+
+    // Language filter
+    if (language && tweet.language !== language) {
+      return false;
+    }
+
+    // Reply/Retweet filter
+    if (excludeRetweets && tweet.is_retweet) {
+      return false;
+    }
+
+    if (excludeReplies && tweet.is_reply) {
+      // Allow self-replies (threads) if configured
+      if (includeThreads && tweet.in_reply_to_user_id === tweet.user.id) {
+        return true;
+      }
+      return false;
+    }
+
+    return true;
+  });
+
+  console.log(`After filtering: ${filtered.length} tweets remain`);
+  return filtered;
+}
+
+// Process images in tweets
+async function processImages(tweets) {
+  console.log(`Processing images for ${tweets.length} tweets...`);
+
+  const tempDir = path.join(__dirname, 'data', 'images');
+  if (!fs.existsSync(tempDir)) {
+    fs.mkdirSync(tempDir, { recursive: true });
+  }
+
+  const processed = [];
+
+  for (const tweet of tweets) {
+    try {
+      // Check for media
+      const hasMedia = tweet.entities && tweet.entities.media && tweet.entities.media.length > 0;
+
+      if (!hasMedia) {
+        // No images to process
+        processed.push(tweet);
+        continue;
+      }
+
+      // Get photos
+      const photos = tweet.entities.media.filter(m => m.type === 'photo');
+
+      if (photos.length === 0) {
+        // No photos (videos or other media)
+        processed.push(tweet);
+        continue;
+      }
+
+      // Process each photo
+      const imageResults = [];
+
+      for (let i = 0; i < photos.length; i++) {
+        const media = photos[i];
+        const imagePath = path.join(tempDir, `tweet_${tweet.id}_img_${i}.jpg`);
+
+        try {
+          // Download image
+          const response = await axios.get(media.media_url_https, { responseType: 'arraybuffer' });
+          fs.writeFileSync(imagePath, Buffer.from(response.data, 'binary'));
+
+          // Perform OCR
+          const result = await Tesseract.recognize(imagePath, 'eng');
+
+          const ocrResult = {
+            text: result.data.text.trim(),
+            confidence: result.data.confidence
+          };
+
+          imageResults.push({
+            url: media.media_url_https,
+            ocrText: ocrResult.text,
+            confidence: ocrResult.confidence
+          });
+
+          // Clean up the image
+          if (fs.existsSync(imagePath)) {
+            fs.unlinkSync(imagePath);
+          }
+        } catch (error) {
+          console.error(`Error processing image for tweet ${tweet.id}:`, error.message);
+          imageResults.push({
+            url: media.media_url_https,
+            error: error.message
+          });
+        }
+      }
+
+      // Add tweet with OCR results
+      processed.push({
+        ...tweet,
+        imageOcrResults: imageResults,
+        combinedImageText: imageResults
+          .filter(r => r.ocrText)
+          .map(r => r.ocrText)
+          .join(' ')
+      });
+    } catch (error) {
+      console.error(`Error processing tweet ${tweet.id}:`, error);
+      processed.push(tweet);
+    }
+  }
+
+  return processed;
+}
+
+// Save tweets to file
+function saveTweets(handle, tweets, type = 'raw') {
+  const dir = path.join(__dirname, 'data', type);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  const filename = `${type}_${handle.replace('@', '')}.json`;
+  fs.writeFileSync(path.join(dir, filename), JSON.stringify(tweets, null, 2));
+
+  console.log(`Saved ${tweets.length} ${type} tweets for ${handle}`);
+}
+
+// Export to CSV
+function exportToCSV(tweets) {
+  const dir = path.join(__dirname, 'data', 'combined');
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  const filename = 'all_tweets.csv';
+  const filepath = path.join(dir, filename);
+
+  // CSV headers
+  const headers = [
+    'id', 'text', 'created_at', 'url', 'favorite_count', 'retweet_count',
+    'reply_count', 'user_name', 'user_screen_name', 'image_text'
+  ];
+
+  // Create CSV content
+  let csvContent = headers.join(',') + '\n';
+
+  for (const tweet of tweets) {
+    const values = [
+      `"${tweet.id}"`,
+      `"${(tweet.text || '').replace(/"/g, '""')}"`,
+      `"${tweet.created_at}"`,
+      `"${tweet.url}"`,
+      tweet.favorite_count,
+      tweet.retweet_count,
+      tweet.reply_count,
+      `"${(tweet.user.name || '').replace(/"/g, '""')}"`,
+      `"${tweet.user.screen_name || ''}"`,
+      `"${(tweet.combinedImageText || '').replace(/"/g, '""')}"`
+    ];
+
+    csvContent += values.join(',') + '\n';
+  }
+
+  fs.writeFileSync(filepath, csvContent);
+  console.log(`Exported ${tweets.length} tweets to ${filepath}`);
+
+  return filepath;
+}
+
+// Main function
+async function main() {
+  try {
+    console.log("Starting Twitter scraper...");
+
+    // Create data directories
+    const dataDirs = ['data', 'data/raw', 'data/processed', 'data/images', 'data/combined'];
+    for (const dir of dataDirs) {
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+      }
+    }
+
+    // Load progress
+    const progress = loadProgress();
+    console.log(`Loaded progress: ${progress.completedAccounts.length} accounts completed`);
+
+    // Process each account
+    const allProcessedTweets = [];
+
+    for (const account of accounts) {
+      // Skip if already completed
+      if (progress.completedAccounts.includes(account.handle)) {
+        console.log(`Skipping ${account.handle} - already completed`);
+
+        // Load processed tweets for this account
+        try {
+          const processedFile = path.join(__dirname, 'data', 'processed', `processed_${account.handle.replace('@', '')}.json`);
+          if (fs.existsSync(processedFile)) {
+            const accountTweets = JSON.parse(fs.readFileSync(processedFile));
+            allProcessedTweets.push(...accountTweets);
+            console.log(`Loaded ${accountTweets.length} processed tweets for ${account.handle}`);
+          }
+        } catch (error) {
+          console.error(`Error loading processed tweets for ${account.handle}:`, error.message);
+        }
+
+        continue;
+      }
+
+      console.log(`\nProcessing account: ${account.handle} (${account.name})`);
+
+      // Update progress
+      progress.currentAccount = account.handle;
+      progress.lastCursor = null;
+      saveProgress(progress);
+
+      try {
+        // Get user ID
+        const userId = await getTwitterId(account.handle);
+        console.log(`Using ID ${userId} for ${account.handle}`);
+
+        // Collect tweets with pagination
+        let allTweets = [];
+        let nextCursor = progress.lastCursor;
+        let continueScrapingThisAccount = true;
+
+        while (continueScrapingThisAccount) {
+          console.log(`Scraping tweets for ${account.handle}${nextCursor ? ' with cursor' : ''}...`);
+
+          const { tweets, nextCursor: newCursor } = await scrapeTweets(userId, 50, nextCursor);
+
+          if (tweets.length === 0) {
+            console.log(`No more tweets for ${account.handle}`);
+            break;
+          }
+
+          allTweets.push(...tweets);
+          console.log(`Collected ${tweets.length} tweets, total: ${allTweets.length}`);
+
+          // Update progress
+          nextCursor = newCursor;
+          progress.lastCursor = nextCursor;
+          saveProgress(progress);
+
+          // Check if we have enough tweets
+          if (allTweets.length >= 200 || !nextCursor) {
+            console.log(`Enough tweets collected for ${account.handle}`);
+            continueScrapingThisAccount = false;
+          } else {
+            // Wait between API calls to avoid rate limiting
+            console.log('Waiting 3 seconds before next API call...');
+            await new Promise(resolve => setTimeout(resolve, 3000));
+          }
+        }
+
+        console.log(`Collected ${allTweets.length} total tweets for ${account.handle}`);
+
+        // Save raw tweets
+        saveTweets(account.handle, allTweets, 'raw');
+
+        // Filter tweets
+        const filteredTweets = filterTweets(allTweets);
+
+        // Process images (only if there are filtered tweets)
+        let processedTweets = filteredTweets;
+        if (filteredTweets.length > 0) {
+          processedTweets = await processImages(filteredTweets);
+        }
+
+        // Save processed tweets
+        saveTweets(account.handle, processedTweets, 'processed');
+
+        // Add to all processed tweets
+        allProcessedTweets.push(...processedTweets);
+
+        // Mark as completed
+        progress.completedAccounts.push(account.handle);
+        progress.currentAccount = null;
+        progress.lastCursor = null;
+        saveProgress(progress);
+
+        console.log(`Completed ${account.handle}`);
+
+        // Wait between accounts to avoid rate limiting
+        if (account.handle !== accounts[accounts.length - 1].handle) {
+          console.log('Waiting 10 seconds before next account...');
+          await new Promise(resolve => setTimeout(resolve, 10000));
+        }
+      } catch (error) {
+        console.error(`Error processing ${account.handle}:`, error.message);
+
+        // Don't mark as completed, so we can retry
+        saveProgress(progress);
+      }
+    }
+
+    // Export all processed tweets to CSV
+    console.log(`\nExporting ${allProcessedTweets.length} processed tweets to CSV...`);
+    const csvFile = exportToCSV(allProcessedTweets);
+
+    // Also save all tweets to JSON
+    const combinedFile = path.join(__dirname, 'data', 'combined', 'all_tweets.json');
+    fs.writeFileSync(combinedFile, JSON.stringify(allProcessedTweets, null, 2));
+    console.log(`All tweets saved to ${combinedFile}`);
+
+    console.log("\nScraping completed!");
+    console.log(`Processed ${allProcessedTweets.length} tweets from ${progress.completedAccounts.length} accounts`);
+    console.log(`Results saved to data/combined/ directory`);
+
+  } catch (error) {
+    console.error('Unexpected error:', error);
+  }
+}
+
+// Run the scraper
+main();
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\modules\account-scraper.js =====
+const fs = require('fs');
+const path = require('path');
+const { getTwitterId } = require('../utils/handle-resolver');
+const { makeTwitterRequest, extractTweetsFromResponse } = require('../utils/twitter-api');
+const { validateAuth } = require('../utils/auth');
+const { filterTweets } = require('../utils/filters');
+const { processImages } = require('./image-processor');
+const { updateProgress, loadProgress } = require('../utils/progress-tracker');
+
+/**
+ * Scrape tweets for a user ID
+ * @param {string} userId - Twitter user ID
+ * @param {number|null} maxTweets - Maximum tweets to fetch (null for unlimited)
+ * @param {string|null} cursor - Pagination cursor
+ * @returns {Promise<Array>} - Array of tweets
+ */
+async function scrapeUserTweets(userId, maxTweets = null, cursor = null) {
+  let allTweets = [];
+  let currentCursor = cursor;
+  let tweetsPerRequest = 50;
+
+  // Loop with pagination
+  while (true) {
+    if (maxTweets && allTweets.length >= maxTweets) {
+      console.log(`Reached maximum tweets limit (${maxTweets})`);
+      break;
+    }
+
+    // Validate auth before each request
+    if (!await validateAuth()) {
+      throw new Error('Invalid or expired authentication');
+    }
+
+    // Make the Twitter API request with cursor
+    const response = await makeTwitterRequest(userId, currentCursor, tweetsPerRequest);
+
+    // Extract tweets and cursor
+    const { tweets, nextCursor } = extractTweetsFromResponse(response);
+    allTweets = [...allTweets, ...tweets];
+
+    console.log(`Fetched ${tweets.length} tweets, total: ${allTweets.length}`);
+
+    // Update progress
+    updateProgress({
+      currentAccount: userId,
+      lastCursor: nextCursor,
+      tweetsCollected: allTweets.length
+    });
+
+    // Exit loop if no more tweets or cursor
+    if (!nextCursor || tweets.length === 0) {
+      console.log('No more tweets or end of pagination');
+      break;
+    }
+
+    // Set cursor for next iteration
+    currentCursor = nextCursor;
+  }
+
+  return allTweets;
+}
+
+/**
+ * Scrape tweets for multiple accounts
+ * @param {Object} config - Configuration options
+ * @returns {Promise<void>}
+ */
+async function scrapeAccounts(config = {}) {
+  // Load accounts from config or use defaults
+  const accountsModule = require('../config/accounts');
+  const accounts = config.accounts || accountsModule.accounts;
+  const maxTweets = config.tweetsPerAccount || null;
+
+  console.log(`Starting to scrape ${accounts.length} accounts`);
+
+  // Get or create progress
+  const progress = loadProgress();
+
+  // Process each account
+  for (const account of accounts) {
+    // Skip if already completed
+    if (progress.completedAccounts.includes(account.handle)) {
+      console.log(`Skipping ${account.handle} - already completed`);
+      continue;
+    }
+
+    console.log(`Processing account: ${account.handle}`);
+
+    try {
+      // Get Twitter user ID from handle
+      const userId = await getTwitterId(account.handle);
+
+      // Set current account in progress
+      updateProgress({ currentAccount: account.handle });
+
+      // Scrape tweets
+      const rawTweets = await scrapeUserTweets(
+        userId,
+        maxTweets,
+        account.handle === progress.currentAccount ? progress.lastCursor : null
+      );
+
+      // Save raw tweets
+      saveRawTweets(account.handle, rawTweets);
+
+      // Filter tweets
+      const filteredTweets = filterTweets(rawTweets);
+
+      // Process images if present
+      const processedTweets = await processImages(filteredTweets, config);
+
+      // Save processed tweets
+      saveProcessedTweets(account.handle, processedTweets);
+
+      // Mark account as completed
+      updateProgress({
+        completedAccounts: [...progress.completedAccounts, account.handle],
+        currentAccount: null,
+        lastCursor: null
+      });
+
+    } catch (error) {
+      console.error(`Error processing ${account.handle}:`, error);
+      // Don't mark as completed, so we can retry
+    }
+  }
+
+  // Combine all processed tweets into final datasets
+  createFinalDatasets();
+}
+
+// Helper functions for saving data
+function saveRawTweets(handle, tweets) {
+  const dir = path.join(__dirname, '../data/raw');
+  fs.mkdirSync(dir, { recursive: true });
+
+  const filename = `raw_${handle.replace('@', '')}.json`;
+  fs.writeFileSync(
+    path.join(dir, filename),
+    JSON.stringify(tweets, null, 2)
+  );
+
+  console.log(`Saved ${tweets.length} raw tweets for ${handle}`);
+}
+
+function saveProcessedTweets(handle, tweets) {
+  const dir = path.join(__dirname, '../data/processed');
+  fs.mkdirSync(dir, { recursive: true });
+
+  const filename = `processed_${handle.replace('@', '')}.json`;
+  fs.writeFileSync(
+    path.join(dir, filename),
+    JSON.stringify(tweets, null, 2)
+  );
+
+  console.log(`Saved ${tweets.length} processed tweets for ${handle}`);
+}
+
+function createFinalDatasets() {
+  // This will be implemented in data-exporter.js
+  console.log('Final dataset creation will be handled by data-exporter.js');
+}
+
+module.exports = {
+  scrapeUserTweets,
+  scrapeAccounts
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\modules\data-exporter.js =====
+const fs = require('fs');
+const path = require('path');
+
+/**
+ * Combine all processed tweets into final datasets
+ * @param {string} outputDir - Directory to save combined datasets
+ * @param {Array<string>} formats - Output formats ('json', 'csv')
+ * @returns {Promise<void>}
+ */
+async function exportDatasets(outputDir = null, formats = ['json']) {
+  // Default to data/combined if not specified
+  const outDir = outputDir || path.join(__dirname, '../data/combined');
+  fs.mkdirSync(outDir, { recursive: true });
+
+  console.log('Combining processed tweets into final datasets');
+
+  try {
+    // Read all processed tweet files
+    const processedDir = path.join(__dirname, '../data/processed');
+    const files = fs.readdirSync(processedDir)
+      .filter(file => file.startsWith('processed_') && file.endsWith('.json'));
+
+    console.log(`Found ${files.length} processed tweet files`);
+
+    // Combine all tweets
+    let allTweets = [];
+
+    for (const file of files) {
+      const filePath = path.join(processedDir, file);
+      const tweets = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      console.log(`Adding ${tweets.length} tweets from ${file}`);
+      allTweets = [...allTweets, ...tweets];
+    }
+
+    console.log(`Combined dataset contains ${allTweets.length} tweets`);
+
+    // Export in requested formats
+    if (formats.includes('json')) {
+      const jsonPath = path.join(outDir, 'all_tweets.json');
+      fs.writeFileSync(jsonPath, JSON.stringify(allTweets, null, 2));
+      console.log(`Exported JSON dataset to ${jsonPath}`);
+    }
+
+    if (formats.includes('csv')) {
+      const csvPath = path.join(outDir, 'all_tweets.csv');
+      const csv = convertToCSV(allTweets);
+      fs.writeFileSync(csvPath, csv);
+      console.log(`Exported CSV dataset to ${csvPath}`);
+    }
+
+  } catch (error) {
+    console.error('Error exporting datasets:', error);
+  }
+}
+
+/**
+ * Convert tweets to CSV format
+ * @param {Array<Object>} tweets - Array of tweet objects
+ * @returns {string} - CSV content
+ */
+function convertToCSV(tweets) {
+  if (tweets.length === 0) return '';
+
+  // Define headers (adjust based on your needs)
+  const headers = [
+    'id', 'text', 'created_at', 'retweet_count', 'favorite_count',
+    'reply_count', 'user_id', 'user_screen_name', 'language',
+    'url', 'combinedImageText'
+  ];
+
+  // Start with headers
+  let csv = headers.join(',') + '\n';
+
+  // Add each tweet
+  for (const tweet of tweets) {
+    // Map tweet properties to row
+    const row = headers.map(header => {
+      switch (header) {
+        case 'user_id':
+          return tweet.user?.id || '';
+        case 'user_screen_name':
+          return tweet.user?.screen_name || '';
+        case 'combinedImageText':
+          // Escape quotes and handle undefined
+          return tweet.combinedImageText
+            ? `"${tweet.combinedImageText.replace(/"/g, '""')}"`
+            : '';
+        case 'text':
+          // Escape quotes in text
+          return `"${tweet.text.replace(/"/g, '""')}"`;
+        default:
+          return tweet[header] || '';
+      }
+    });
+
+    csv += row.join(',') + '\n';
+  }
+
+  return csv;
+}
+
+module.exports = {
+  exportDatasets,
+  convertToCSV
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\modules\image-processor.js =====
+const fs = require('fs');
+const path = require('path');
+const { downloadImage, performOCR } = require('../utils/ocr');
+const config = require('../config/scraper-config');
+
+/**
+ * Process images for a collection of tweets
+ * @param {Array<Object>} tweets - Array of tweets
+ * @param {Object} options - Processing options
+ * @returns {Promise<Array<Object>>} - Tweets with image OCR data
+ */
+async function processImages(tweets, options = {}) {
+  // Create temp directory for images
+  const tempDir = path.join(__dirname, '..', config.tempImageDir);
+  fs.mkdirSync(tempDir, { recursive: true });
+
+  const maxImages = options.maxImages || Infinity;
+  let processedCount = 0;
+
+  console.log(`Processing images for ${tweets.length} tweets`);
+
+  const results = [];
+
+  for (const tweet of tweets) {
+    try {
+      // Check if tweet has media
+      const hasMedia = tweet.entities &&
+                      tweet.entities.media &&
+                      tweet.entities.media.length > 0;
+
+      if (!hasMedia) {
+        // No images to process, just add tweet as is
+        results.push(tweet);
+        continue;
+      }
+
+      // Get photo media only
+      const photos = tweet.entities.media.filter(m => m.type === 'photo');
+
+      if (photos.length === 0) {
+        // No photos (might be videos), add tweet as is
+        results.push(tweet);
+        continue;
+      }
+
+      // Process each photo
+      const imageResults = [];
+
+      for (const media of photos) {
+        // Skip if we've hit the limit
+        if (processedCount >= maxImages) {
+          console.log(`Reached maximum images limit (${maxImages})`);
+          break;
+        }
+
+        const imagePath = path.join(tempDir, `tweet_${tweet.id}_img_${processedCount}.jpg`);
+
+        try {
+          // Download the image
+          await downloadImage(media.media_url_https, imagePath);
+
+          // Extract text using OCR
+          const ocrResult = await performOCR(imagePath);
+
+          imageResults.push({
+            url: media.media_url_https,
+            ocrText: ocrResult.text,
+            confidence: ocrResult.confidence
+          });
+
+          // Clean up the image
+          if (fs.existsSync(imagePath)) {
+            fs.unlinkSync(imagePath);
+          }
+
+          processedCount++;
+        } catch (error) {
+          console.error(`Error processing image for tweet ${tweet.id}:`, error.message);
+          imageResults.push({
+            url: media.media_url_https,
+            error: error.message
+          });
+        }
+      }
+
+      // Add tweet with OCR results
+      results.push({
+        ...tweet,
+        imageOcrResults: imageResults,
+        combinedImageText: imageResults
+          .filter(r => r.ocrText && r.confidence >= config.ocrConfidenceThreshold)
+          .map(r => r.ocrText)
+          .join(' ')
+      });
+
+    } catch (error) {
+      console.error(`Error processing tweet ${tweet.id}:`, error);
+      results.push(tweet);
+    }
+  }
+
+  console.log(`Processed ${processedCount} images from ${tweets.length} tweets`);
+  return results;
+}
+
+module.exports = {
+  processImages
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\modules\tweet-processor.js =====
+const { filterTweets } = require('../utils/filters');
+
+/**
+ * Process tweets through filtering pipeline
+ * @param {Array<Object>} tweets - Raw tweets
+ * @returns {Array<Object>} - Processed tweets
+ */
+async function processTweets(tweets) {
+  console.log(`Processing ${tweets.length} tweets`);
+
+  // Apply filters
+  const filtered = filterTweets(tweets);
+
+  // Further processing can be added here
+
+  return filtered;
+}
+
+module.exports = {
+  processTweets
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\package-lock.json =====
+{
+  "name": "twitter-idea-scraper",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "twitter-idea-scraper",
+      "version": "1.0.0",
+      "dependencies": {
+        "axios": "^1.6.0",
+        "tesseract.js": "^6.0.1"
+      }
+    },
+    "node_modules/asynckit": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz",
+      "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==",
+      "license": "MIT"
+    },
+    "node_modules/axios": {
+      "version": "1.9.0",
+      "resolved": "https://registry.npmjs.org/axios/-/axios-1.9.0.tgz",
+      "integrity": "sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==",
+      "license": "MIT",
+      "dependencies": {
+        "follow-redirects": "^1.15.6",
+        "form-data": "^4.0.0",
+        "proxy-from-env": "^1.1.0"
+      }
+    },
+    "node_modules/bmp-js": {
+      "version": "0.1.0",
+      "resolved": "https://registry.npmjs.org/bmp-js/-/bmp-js-0.1.0.tgz",
+      "integrity": "sha512-vHdS19CnY3hwiNdkaqk93DvjVLfbEcI8mys4UjuWrlX1haDmroo8o4xCzh4wD6DGV6HxRCyauwhHRqMTfERtjw==",
+      "license": "MIT"
+    },
+    "node_modules/call-bind-apply-helpers": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz",
+      "integrity": "sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0",
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/combined-stream": {
+      "version": "1.0.8",
+      "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz",
+      "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
+      "license": "MIT",
+      "dependencies": {
+        "delayed-stream": "~1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.8"
+      }
+    },
+    "node_modules/delayed-stream": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz",
+      "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/dunder-proto": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz",
+      "integrity": "sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==",
+      "license": "MIT",
+      "dependencies": {
+        "call-bind-apply-helpers": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "gopd": "^1.2.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-define-property": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz",
+      "integrity": "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-errors": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz",
+      "integrity": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-object-atoms": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz",
+      "integrity": "sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-set-tostringtag": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz",
+      "integrity": "sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0",
+        "get-intrinsic": "^1.2.6",
+        "has-tostringtag": "^1.0.2",
+        "hasown": "^2.0.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/follow-redirects": {
+      "version": "1.15.9",
+      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.9.tgz",
+      "integrity": "sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==",
+      "funding": [
+        {
+          "type": "individual",
+          "url": "https://github.com/sponsors/RubenVerborgh"
+        }
+      ],
+      "license": "MIT",
+      "engines": {
+        "node": ">=4.0"
+      },
+      "peerDependenciesMeta": {
+        "debug": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/form-data": {
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.2.tgz",
+      "integrity": "sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==",
+      "license": "MIT",
+      "dependencies": {
+        "asynckit": "^0.4.0",
+        "combined-stream": "^1.0.8",
+        "es-set-tostringtag": "^2.1.0",
+        "mime-types": "^2.1.12"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/function-bind": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
+      "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
+      "license": "MIT",
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/get-intrinsic": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz",
+      "integrity": "sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==",
+      "license": "MIT",
+      "dependencies": {
+        "call-bind-apply-helpers": "^1.0.2",
+        "es-define-property": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "es-object-atoms": "^1.1.1",
+        "function-bind": "^1.1.2",
+        "get-proto": "^1.0.1",
+        "gopd": "^1.2.0",
+        "has-symbols": "^1.1.0",
+        "hasown": "^2.0.2",
+        "math-intrinsics": "^1.1.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/get-proto": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz",
+      "integrity": "sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==",
+      "license": "MIT",
+      "dependencies": {
+        "dunder-proto": "^1.0.1",
+        "es-object-atoms": "^1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/gopd": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz",
+      "integrity": "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/has-symbols": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz",
+      "integrity": "sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/has-tostringtag": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz",
+      "integrity": "sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==",
+      "license": "MIT",
+      "dependencies": {
+        "has-symbols": "^1.0.3"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/hasown": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz",
+      "integrity": "sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==",
+      "license": "MIT",
+      "dependencies": {
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/idb-keyval": {
+      "version": "6.2.2",
+      "resolved": "https://registry.npmjs.org/idb-keyval/-/idb-keyval-6.2.2.tgz",
+      "integrity": "sha512-yjD9nARJ/jb1g+CvD0tlhUHOrJ9Sy0P8T9MF3YaLlHnSRpwPfpTX0XIvpmw3gAJUmEu3FiICLBDPXVwyEvrleg==",
+      "license": "Apache-2.0"
+    },
+    "node_modules/is-url": {
+      "version": "1.2.4",
+      "resolved": "https://registry.npmjs.org/is-url/-/is-url-1.2.4.tgz",
+      "integrity": "sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==",
+      "license": "MIT"
+    },
+    "node_modules/math-intrinsics": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz",
+      "integrity": "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/mime-db": {
+      "version": "1.52.0",
+      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/mime-types": {
+      "version": "2.1.35",
+      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+      "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+      "license": "MIT",
+      "dependencies": {
+        "mime-db": "1.52.0"
+      },
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/node-fetch": {
+      "version": "2.7.0",
+      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz",
+      "integrity": "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==",
+      "license": "MIT",
+      "dependencies": {
+        "whatwg-url": "^5.0.0"
+      },
+      "engines": {
+        "node": "4.x || >=6.0.0"
+      },
+      "peerDependencies": {
+        "encoding": "^0.1.0"
+      },
+      "peerDependenciesMeta": {
+        "encoding": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/opencollective-postinstall": {
+      "version": "2.0.3",
+      "resolved": "https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz",
+      "integrity": "sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==",
+      "license": "MIT",
+      "bin": {
+        "opencollective-postinstall": "index.js"
+      }
+    },
+    "node_modules/proxy-from-env": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz",
+      "integrity": "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==",
+      "license": "MIT"
+    },
+    "node_modules/regenerator-runtime": {
+      "version": "0.13.11",
+      "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz",
+      "integrity": "sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==",
+      "license": "MIT"
+    },
+    "node_modules/tesseract.js": {
+      "version": "6.0.1",
+      "resolved": "https://registry.npmjs.org/tesseract.js/-/tesseract.js-6.0.1.tgz",
+      "integrity": "sha512-/sPvMvrCtgxnNRCjbTYbr7BRu0yfWDsMZQ2a/T5aN/L1t8wUQN6tTWv6p6FwzpoEBA0jrN2UD2SX4QQFRdoDbA==",
+      "hasInstallScript": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "bmp-js": "^0.1.0",
+        "idb-keyval": "^6.2.0",
+        "is-url": "^1.2.4",
+        "node-fetch": "^2.6.9",
+        "opencollective-postinstall": "^2.0.3",
+        "regenerator-runtime": "^0.13.3",
+        "tesseract.js-core": "^6.0.0",
+        "wasm-feature-detect": "^1.2.11",
+        "zlibjs": "^0.3.1"
+      }
+    },
+    "node_modules/tesseract.js-core": {
+      "version": "6.0.0",
+      "resolved": "https://registry.npmjs.org/tesseract.js-core/-/tesseract.js-core-6.0.0.tgz",
+      "integrity": "sha512-1Qncm/9oKM7xgrQXZXNB+NRh19qiXGhxlrR8EwFbK5SaUbPZnS5OMtP/ghtqfd23hsr1ZvZbZjeuAGcMxd/ooA==",
+      "license": "Apache-2.0"
+    },
+    "node_modules/tr46": {
+      "version": "0.0.3",
+      "resolved": "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz",
+      "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==",
+      "license": "MIT"
+    },
+    "node_modules/wasm-feature-detect": {
+      "version": "1.8.0",
+      "resolved": "https://registry.npmjs.org/wasm-feature-detect/-/wasm-feature-detect-1.8.0.tgz",
+      "integrity": "sha512-zksaLKM2fVlnB5jQQDqKXXwYHLQUVH9es+5TOOHwGOVJOCeRBCiPjwSg+3tN2AdTCzjgli4jijCH290kXb/zWQ==",
+      "license": "Apache-2.0"
+    },
+    "node_modules/webidl-conversions": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
+      "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==",
+      "license": "BSD-2-Clause"
+    },
+    "node_modules/whatwg-url": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz",
+      "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
+      "license": "MIT",
+      "dependencies": {
+        "tr46": "~0.0.3",
+        "webidl-conversions": "^3.0.0"
+      }
+    },
+    "node_modules/zlibjs": {
+      "version": "0.3.1",
+      "resolved": "https://registry.npmjs.org/zlibjs/-/zlibjs-0.3.1.tgz",
+      "integrity": "sha512-+J9RrgTKOmlxFSDHo0pI1xM6BLVUv+o0ZT9ANtCxGkjIVCCUdx9alUF8Gm+dGLKbkkkidWIHFDZHDMpfITt4+w==",
+      "license": "MIT",
+      "engines": {
+        "node": "*"
+      }
+    }
+  }
+}
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\package.json =====
+{
+  "name": "twitter-idea-scraper",
+  "version": "1.0.0",
+  "description": "Scrape tweets from target accounts to find AI startup ideas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test-run.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "tesseract.js": "^6.0.1"
+  }
+}
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\progress.json =====
+{
+  "completedAccounts": [
+    "@heyBarsee",
+    "@gregisenberg",
+    "@heybarsee",
+    "@jspeiser",
+    "@bentossell",
+    "@levelsio",
+    "@thesamparr",
+    "@thisiskp_",
+    "@danshipper",
+    "@tibo_maker",
+    "@swyx",
+    "@eladgil",
+    "@pranavkhaitan",
+    "@packym",
+    "@matthgray",
+    "@simonhoiberg",
+    "@shivsahni",
+    "@zaeemk",
+    "@joshua_luna",
+    "@philmohun",
+    "@alexgarcia_atx"
+  ],
+  "currentAccount": null,
+  "lastCursor": null,
+  "tweetsCollected": 0,
+  "startTime": 1746937069310,
+  "lastUpdateTime": 1746937073660
+}
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\README.md =====
+# Twitter Idea Mining
+
+A tool to gather a diverse corpus of tweets from target accounts to mine for usable AI startup ideas.
+
+## Setup
+
+1. Install dependencies:
+   ```
+   npm install
+   ```
+
+2. Install Tesseract.js for OCR:
+   ```
+   npm install tesseract.js
+   ```
+
+3. Make sure you have a valid `twitter_auth.json` file (generated from Chrome extension)
+
+## Usage
+
+### Test Run (Recommended first)
+
+Run a limited test to verify everything works:
+
+```
+npm run test
+```
+
+### Full Run
+
+Run the complete scraping process:
+
+```
+npm start
+```
+
+## Configuration
+
+- Edit accounts in `config/accounts.js`
+- Adjust filters in `config/filters.js`
+- Change scraper settings in `config/scraper-config.js`
+
+## Output
+
+- Raw tweets: `data/raw/`
+- Processed tweets: `data/processed/`
+- Final datasets: `data/combined/`
+  - JSON: `all_tweets.json`
+  - CSV: `all_tweets.csv`
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\scrape_project.js =====
+const fs = require('fs');
+const path = require('path');
+
+const OUTPUT_FILE = 'project_scrape.txt';
+const EXCLUDED_DIRS = ['node_modules', '.git', 'dist', 'data'];
+const EXCLUDED_EXTENSIONS = ['.traineddata'];
+
+function scrapeDirectory(dirPath, outputStream) {
+  const items = fs.readdirSync(dirPath, { withFileTypes: true });
+
+  for (const item of items) {
+    const fullPath = path.join(dirPath, item.name);
+
+    // Skip excluded directories
+    if (item.isDirectory() && EXCLUDED_DIRS.includes(item.name)) continue;
+
+    // Skip excluded file extensions
+    if (item.isFile() && EXCLUDED_EXTENSIONS.includes(path.extname(item.name))) continue;
+
+    if (item.isDirectory()) {
+      scrapeDirectory(fullPath, outputStream);
+    } else if (item.isFile()) {
+      try {
+        const contents = fs.readFileSync(fullPath, 'utf-8');
+        outputStream.write(`===== FILE: ${fullPath} =====\n`);
+        outputStream.write(contents + '\n\n');
+      } catch (err) {
+        console.error(`Failed to read ${fullPath}:`, err.message);
+      }
+    }
+  }
+}
+
+function startScrape() {
+  const outputStream = fs.createWriteStream(OUTPUT_FILE);
+  const rootDir = process.cwd();
+
+  console.log(`Scraping project at ${rootDir}...`);
+  scrapeDirectory(rootDir, outputStream);
+
+  outputStream.end(() => {
+    console.log(`✅ Scraping complete. Output saved to ${OUTPUT_FILE}`);
+  });
+}
+
+startScrape();
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\twitter_auth.json =====
+{
+  "bearerToken": "",
+  "cookieString": "personalization_id=\"v1_n1r7SfIdNJVvLUmqB1OihQ==\"; guest_id_marketing=v1%3A171961061536457054; guest_id_ads=v1%3A171961061536457054; guest_id=v1%3A171961061536457054; night_mode=2; dnt=1; kdt=ilmMedPbiOTPoDHR6mDlUKDeLpxeBuTVk7FszT3d; twid=u%3D1174448338084622336; guest_id=v1%3A174667617236522088; guest_id_marketing=v1%3A174667617236522088; guest_id_ads=v1%3A174667617236522088; personalization_id=\"v1_5lHNYo70wfVihkffabngvg==\"; auth_token=b1988ddb1066e65f0c524f3f4e16768dfa47c12c; ct0=d5d9cffcf852912451eb8c247fbfaf04f6f4ac8ee15ccffec959dd7d5c78bbaa69beab80dcd88f5bf5feec25879a511bd7e555947a0a7038ccacbb24febab3a4e5a1a7bf4619cbb862da25eb0ae1642a; twid=u%3D1174448338084622336; __cf_bm=a_7ZJj6N06zLahhIW.0iyw0eyF.WIM_HAKAe09RTEvw-1746874621-1.0.1.1-qW4sGM.FzZZZLxa.Hnh1aUDLXeZkAbdcINe9OVSmDQ5wVaMTKs44FmCG9QvR5hm_dt769ZGXLRmoGFXqtBvyaboPOdMoJv_sveabzK8iyoM;",
+  "cookies": {
+    "auth_token": "b1988ddb1066e65f0c524f3f4e16768dfa47c12c",
+    "ct0": "d5d9cffcf852912451eb8c247fbfaf04f6f4ac8ee15ccffec959dd7d5c78bbaa69beab80dcd88f5bf5feec25879a511bd7e555947a0a7038ccacbb24febab3a4e5a1a7bf4619cbb862da25eb0ae1642a",
+    "twid": "u%3D1174448338084622336"
+  },
+  "csrfToken": "d5d9cffcf852912451eb8c247fbfaf04f6f4ac8ee15ccffec959dd7d5c78bbaa69beab80dcd88f5bf5feec25879a511bd7e555947a0a7038ccacbb24febab3a4e5a1a7bf4619cbb862da25eb0ae1642a",
+  "expires": 1748084356899,
+  "isValid": true,
+  "timestamp": 1746874756899
+}
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\utils\auth.js =====
+const fs = require('fs');
+const path = require('path');
+
+// Load Twitter auth data from JSON file
+function loadAuthData() {
+  const authFilePath = path.join(__dirname, '../twitter_auth.json');
+
+  try {
+    if (!fs.existsSync(authFilePath)) {
+      console.error('Authentication file not found! Please generate it using the Chrome extension.');
+      return null;
+    }
+
+    const authData = JSON.parse(fs.readFileSync(authFilePath, 'utf8'));
+
+    // Check if auth data is valid
+    if (!authData.isValid) {
+      console.error('Authentication data is marked as invalid. Please refresh it using the Chrome extension.');
+      return null;
+    }
+
+    // Check if auth data is expired
+    const now = Date.now();
+    if (now > authData.expires) {
+      console.error('Authentication data has expired. Please refresh it using the Chrome extension.');
+      return null;
+    }
+
+    console.log('Successfully loaded authentication data:');
+    console.log('- Last updated:', new Date(authData.timestamp).toLocaleString());
+    console.log('- Expires:', new Date(authData.expires).toLocaleString());
+
+    return authData;
+  } catch (error) {
+    console.error('Error loading authentication data:', error.message);
+    return null;
+  }
+}
+
+// Validate authentication
+async function validateAuth() {
+  const authData = loadAuthData();
+
+  if (!authData) return false;
+
+  // Check expiration
+  const now = Date.now();
+  if (now > authData.expires) {
+    console.error("Authentication has expired.");
+    return false;
+  }
+
+  const hoursRemaining = (authData.expires - now) / (1000 * 60 * 60);
+  console.log(`Auth valid for ${hoursRemaining.toFixed(1)} more hours.`);
+
+  return true;
+}
+
+module.exports = {
+  loadAuthData,
+  validateAuth
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\utils\filters.js =====
+const config = require('../config/filters');
+
+/**
+ * Check if a tweet meets all filter criteria
+ * @param {Object} tweet - Tweet object
+ * @returns {boolean} - Whether tweet meets criteria
+ */
+function meetsFilterCriteria(tweet) {
+  return (
+    meetsDateCriteria(tweet) &&
+    meetsEngagementCriteria(tweet) &&
+    meetsLanguageCriteria(tweet) &&
+    meetsReplyRetweetCriteria(tweet)
+  );
+}
+
+/**
+ * Check if tweet is within date range
+ * @param {Object} tweet - Tweet object
+ * @returns {boolean}
+ */
+function meetsDateCriteria(tweet) {
+  const months = config.dateRange.months || 6;
+  const cutoffDate = new Date();
+  cutoffDate.setMonth(cutoffDate.getMonth() - months);
+
+  const tweetDate = new Date(tweet.created_at);
+  return tweetDate >= cutoffDate;
+}
+
+/**
+ * Check if tweet has enough engagement
+ * @param {Object} tweet - Tweet object
+ * @returns {boolean}
+ */
+function meetsEngagementCriteria(tweet) {
+  const minLikes = config.engagement.minLikes || 50;
+  const minRetweets = config.engagement.minRetweets || 10;
+  const requireEither = config.engagement.requireEither || true;
+
+  const likes = tweet.favorite_count;
+  const retweets = tweet.retweet_count;
+
+  if (requireEither) {
+    return likes >= minLikes || retweets >= minRetweets;
+  } else {
+    return likes >= minLikes && retweets >= minRetweets;
+  }
+}
+
+/**
+ * Check if tweet is in the right language
+ * @param {Object} tweet - Tweet object
+ * @returns {boolean}
+ */
+function meetsLanguageCriteria(tweet) {
+  const language = config.language || 'en';
+
+  // If language filtering is disabled, return true
+  if (!language) return true;
+
+  return tweet.language === language;
+}
+
+/**
+ * Check if tweet passes reply/retweet filters
+ * @param {Object} tweet - Tweet object
+ * @returns {boolean}
+ */
+function meetsReplyRetweetCriteria(tweet) {
+  // Exclude retweets if configured
+  if (config.excludeRetweets && tweet.is_retweet) {
+    return false;
+  }
+
+  // Handle replies
+  if (tweet.is_reply) {
+    // Exclude all replies if configured
+    if (config.excludeReplies && !config.includeThreads) {
+      return false;
+    }
+
+    // Include self-replies (threads) if configured
+    if (config.excludeReplies && config.includeThreads) {
+      // Check if it's a self-reply (tweet author ID matches the ID being replied to)
+      return tweet.in_reply_to_user_id === tweet.user.id;
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Filter an array of tweets based on all criteria
+ * @param {Array<Object>} tweets - Array of tweet objects
+ * @returns {Array<Object>} - Filtered tweets
+ */
+function filterTweets(tweets) {
+  console.log(`Filtering ${tweets.length} tweets...`);
+  const filtered = tweets.filter(meetsFilterCriteria);
+  console.log(`After filtering: ${filtered.length} tweets remain`);
+  return filtered;
+}
+
+module.exports = {
+  meetsFilterCriteria,
+  filterTweets
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\utils\handle-resolver.js =====
+// utils/handle-resolver.js
+const path = require('path');
+const fs = require('fs');
+
+// Cache for username to ID mapping
+const userCache = {};
+const USER_CACHE_FILE = path.join(__dirname, '../data/user_cache.json');
+
+// Load cache from file
+function loadUserCache() {
+  try {
+    if (fs.existsSync(USER_CACHE_FILE)) {
+      const cache = JSON.parse(fs.readFileSync(USER_CACHE_FILE, 'utf8'));
+      Object.assign(userCache, cache);
+      console.log(`Loaded ${Object.keys(cache).length} users from cache`);
+    }
+  } catch (error) {
+    console.error('Error loading user cache:', error.message);
+  }
+}
+
+// Save cache to file
+function saveUserCache() {
+  try {
+    const dir = path.dirname(USER_CACHE_FILE);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(USER_CACHE_FILE, JSON.stringify(userCache, null, 2));
+  } catch (error) {
+    console.error('Error saving user cache:', error.message);
+  }
+}
+
+// Initialize cache
+loadUserCache();
+
+/**
+ * Hardcoded user ID mapping for all accounts we need
+ * These are the CORRECT IDs verified directly from Twitter's API
+ */
+const HARDCODED_IDS = {
+  'jack': '12',
+  'gregisenberg': '14642331',
+  'heybarsee': '1552871185431527424',
+  'jspeiser': '21213097',
+  'bentossell': '53175441',
+  'levelsio': '1577241403',
+  'thesamparr': '625733783',
+  'thisiskp_': '4736729423',
+  'danshipper': '19829693',
+  'tibo_maker': '470129898',
+  'swyx': '33521530',
+  'eladgil': '6535212',
+  'pranavkhaitan': '100836863',
+  'packym': '21306324',
+  'matthgray': '1797457675980025856',
+  'simonhoiberg': '875776212341329920',
+  'shivsahni': '309035105',
+  'zaeemk': '43564613',
+  'joshua_luna': '1717378307317288960',
+  'philmohun': '799350488428847105',
+  'alexgarcia_atx': '822518487675305984'  // Updated with correct handle and ID
+};
+
+/**
+ * Get Twitter user ID from username
+ * @param {string} handle - Twitter handle (with or without @)
+ * @returns {Promise<string>} - Twitter user ID
+ */
+async function getTwitterId(handle) {
+  // Clean the handle
+  const username = handle.replace('@', '').trim().toLowerCase();
+
+  // ALWAYS prioritize hardcoded IDs over cache
+  if (HARDCODED_IDS[username]) {
+    console.log(`Using hardcoded ID for ${username}: ${HARDCODED_IDS[username]}`);
+
+    // Update cache with hardcoded ID
+    userCache[username] = HARDCODED_IDS[username];
+    saveUserCache();
+
+    return HARDCODED_IDS[username];
+  }
+
+  // Only use cache as fallback for IDs not in our hardcoded list
+  if (userCache[username]) {
+    console.log(`Found ${username} in cache, ID: ${userCache[username]}`);
+    return userCache[username];
+  }
+
+  throw new Error(`Could not find user ID for ${username} - not in hardcoded list`);
+}
+
+// Function to clear cache
+function clearCache() {
+  Object.keys(userCache).forEach(key => {
+    delete userCache[key];
+  });
+  saveUserCache();
+  console.log("User cache cleared");
+}
+
+module.exports = {
+  getTwitterId,
+  clearCache
+};
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\utils\ocr.js =====
+const path = require('path');
+const fs = require('fs');
+const axios = require('axios');
+const Tesseract = require('tesseract.js');
+const config = require('../config/scraper-config');
+
+/**
+ * Download image from URL
+ * @param {string} url - Image URL
+ * @param {string} outputPath - Path to save image
+ * @returns {Promise<void>}
+ */
+async function downloadImage(url, outputPath) {
+  try {
+    const response = await axios({
+      method: 'GET',
+      url: url,
+      responseType: 'stream'
+    });
+
+    const writer = fs.createWriteStream(outputPath);
+    response.data.pipe(writer);
+
+    return new Promise((resolve, reject) => {
+      writer.on('finish', resolve);
+      writer.on('error', reject);
+    });
+  } catch (error) {
+    console.error(`Error downloading image from ${url}:`, error.message);
+    throw error;
+  }
+}
+
+/**
+ * Perform OCR on image
+ * @param {string} imagePath - Path to image file
+ * @returns {Promise<Object>} - OCR result
+ */
+async function performOCR(imagePath) {
+  try {
+    console.log(`Performing OCR on image: ${imagePath}`);
+
+    const result = await Tesseract.recognize(
+      imagePath,
+      'eng', // Language
+      {
+        logger: m => {
+          // Only log progress in debug mode to avoid excessive output
+          if (config.debugMode && m.status === 'recognizing text') {
+            console.log(`OCR progress: ${(m.progress * 100).toFixed(2)}%`);
+          }
+        }
+      }
+    );
+
+    console.log(`OCR completed with confidence: ${result.data.confidence.toFixed(2)}%`);
+
+    // If text is empty or only whitespace, return low confidence
+    const extractedText = result.data.text.trim();
+    if (!extractedText) {
+      return { text: '', confidence: 0 };
+    }
+
+    return {
+      text: extractedText,
+      confidence: result.data.confidence
+    };
+  } catch (error) {
+    console.error(`OCR error for ${imagePath}:`, error);
+    return { text: '', confidence: 0, error: error.message };
+  }
+}
+
+/**
+ * Extract text from base64 image data
+ * @param {string} base64Data - Base64 encoded image data
+ * @returns {Promise<Object>} - OCR result
+ */
+async function performOCRFromBase64(base64Data) {
+  try {
+    console.log('Performing OCR on base64 image data');
+
+    const result = await Tesseract.recognize(
+      base64Data,
+      'eng',
+      {
+        logger: m => {
+          if (config.debugMode && m.status === 'recognizing text') {
+            console.log(`OCR progress: ${(m.progress * 100).toFixed(2)}%`);
+          }
+        }
+      }
+    );
+
+    return {
+      text: result.data.text.trim(),
+      confidence: result.data.confidence
+    };
+  } catch (error) {
+    console.error('OCR error for base64 image:', error);
+    return { text: '', confidence: 0, error: error.message };
+  }
+}
+
+module.exports = {
+  downloadImage,
+  performOCR,
+  performOCRFromBase64
+};
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\utils\progress-tracker.js =====
+const fs = require('fs');
+const path = require('path');
+
+const PROGRESS_FILE = path.join(__dirname, '../progress.json');
+
+/**
+ * Load progress state from file
+ * @returns {Object} Progress state
+ */
+function loadProgress() {
+  try {
+    if (fs.existsSync(PROGRESS_FILE)) {
+      const progress = JSON.parse(fs.readFileSync(PROGRESS_FILE, 'utf8'));
+      console.log('Loaded progress state:', {
+        completedAccounts: progress.completedAccounts.length,
+        currentAccount: progress.currentAccount,
+        tweetsCollected: progress.tweetsCollected
+      });
+      return progress;
+    }
+  } catch (error) {
+    console.error('Error loading progress:', error.message);
+  }
+
+  // Default initial state
+  return {
+    completedAccounts: [],
+    currentAccount: null,
+    lastCursor: null,
+    tweetsCollected: 0,
+    startTime: Date.now(),
+    lastUpdateTime: Date.now()
+  };
+}
+
+/**
+ * Update progress state
+ * @param {Object} updates - Fields to update
+ * @returns {Object} Updated progress
+ */
+function updateProgress(updates = {}) {
+  const current = loadProgress();
+  const updated = { ...current, ...updates, lastUpdateTime: Date.now() };
+
+  try {
+    fs.writeFileSync(PROGRESS_FILE, JSON.stringify(updated, null, 2));
+    return updated;
+  } catch (error) {
+    console.error('Error saving progress:', error.message);
+    return current;
+  }
+}
+
+/**
+ * Reset progress state
+ * @returns {Object} New progress state
+ */
+function resetProgress() {
+  const newProgress = {
+    completedAccounts: [],
+    currentAccount: null,
+    lastCursor: null,
+    tweetsCollected: 0,
+    startTime: Date.now(),
+    lastUpdateTime: Date.now()
+  };
+
+  try {
+    fs.writeFileSync(PROGRESS_FILE, JSON.stringify(newProgress, null, 2));
+    console.log('Progress reset');
+    return newProgress;
+  } catch (error) {
+    console.error('Error resetting progress:', error.message);
+    return loadProgress();
+  }
+}
+
+module.exports = {
+  loadProgress,
+  updateProgress,
+  resetProgress
+};
+
+
+===== FILE: C:\Users\Owner\Downloads\real-estate-react-site\updated_twitter_scrape\utils\twitter-api.js =====
+// Updated twitter-api.js with fallback strategies
+const axios = require('axios');
+const { loadAuthData } = require('./auth');
+const config = require('../config/scraper-config');
+
+/**
+ * Make a request to the Twitter GraphQL API
+ * @param {string} userId - Twitter user ID
+ * @param {string|null} cursor - Pagination cursor
+ * @param {number} count - Number of tweets to fetch
+ * @returns {Promise<Object>} - API response
+ */
+async function makeTwitterRequest(userId, cursor = null, count = 20) {
+  // Load authentication data
+  const authData = loadAuthData();
+  if (!authData) {
+    throw new Error('Failed to load authentication data');
+  }
+
+  // Try one of several known working endpoints
+  const endpoints = [
+    {
+      url: 'https://x.com/i/api/graphql/oFoUJOuykOofizcgjEX4GQ/UserTweets',
+      variables: {
+        userId: userId,
+        count: count,
+        includePromotedContent: true,
+        withQuickPromoteEligibilityTweetFields: true,
+        withVoice: true
+      }
+    },
+    {
+      url: 'https://twitter.com/i/api/graphql/GiG_N2UeCnS2K4QGE1JwAw/UserTweetsAndReplies',
+      variables: {
+        userId: userId,
+        count: count,
+        includePromotedContent: false,
+        withCommunity: true,
+        withVoice: true,
+        withV2Timeline: true
+      }
+    },
+    {
+      url: 'https://twitter.com/i/api/graphql/3JNH4e9dq1BifLxAa3UmOA/UserTweets',
+      variables: {
+        userId: userId,
+        count: count,
+        includePromotedContent: false,
+        withQuickPromoteEligibilityTweetFields: true,
+        withVoice: true,
+        withV2Timeline: true
+      }
+    }
+  ];
+
+  // Add cursor to all endpoints if provided
+  if (cursor) {
+    endpoints.forEach(endpoint => {
+      endpoint.variables.cursor = cursor;
+    });
+  }
+
+  // Common features for all endpoints
+  const features = {
+    "rweb_video_screen_enabled": false,
+    "profile_label_improvements_pcf_label_in_post_enabled": true,
+    "rweb_tipjar_consumption_enabled": true,
+    "verified_phone_label_enabled": false,
+    "creator_subscriptions_tweet_preview_api_enabled": true,
+    "responsive_web_graphql_timeline_navigation_enabled": true,
+    "responsive_web_graphql_skip_user_profile_image_extensions_enabled": false,
+    "premium_content_api_read_enabled": false,
+    "communities_web_enable_tweet_community_results_fetch": true,
+    "c9s_tweet_anatomy_moderator_badge_enabled": true,
+    "responsive_web_grok_analyze_button_fetch_trends_enabled": false,
+    "responsive_web_grok_analyze_post_followups_enabled": true,
+    "responsive_web_jetfuel_frame": false,
+    "responsive_web_grok_share_attachment_enabled": true,
+    "articles_preview_enabled": true,
+    "responsive_web_edit_tweet_api_enabled": true,
+    "graphql_is_translatable_rweb_tweet_is_translatable_enabled": true,
+    "view_counts_everywhere_api_enabled": true,
+    "longform_notetweets_consumption_enabled": true,
+    "responsive_web_twitter_article_tweet_consumption_enabled": true,
+    "tweet_awards_web_tipping_enabled": false,
+    "responsive_web_grok_show_grok_translated_post": false,
+    "responsive_web_grok_analysis_button_from_backend": true,
+    "creator_subscriptions_quote_tweet_preview_enabled": false,
+    "freedom_of_speech_not_reach_fetch_enabled": true,
+    "standardized_nudges_misinfo": true,
+    "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": true,
+    "longform_notetweets_rich_text_read_enabled": true,
+    "longform_notetweets_inline_media_enabled": true,
+    "responsive_web_grok_image_annotation_enabled": true,
+    "responsive_web_enhance_cards_enabled": false
+  };
+
+  const fieldToggles = {
+    withArticlePlainText: false
+  };
+
+  // Use the standard Bearer token if not provided in auth data
+  const bearerToken = authData.bearerToken || 'AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA';
+
+  // Create headers using auth data
+  const headers = {
+    'authorization': `Bearer ${bearerToken}`,
+    'content-type': 'application/json',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
+    'x-twitter-active-user': 'yes',
+    'x-twitter-auth-type': 'OAuth2Session',
+    'x-twitter-client-language': 'en',
+    'x-csrf-token': authData.csrfToken
+  };
+
+  // Implement delay for rate limiting
+  await new Promise(resolve => setTimeout(resolve, config.apiDelay || 2000));
+
+  // Try each endpoint until we get a successful response
+  for (const endpoint of endpoints) {
+    try {
+      console.log(`Trying endpoint ${endpoint.url} for user ${userId}...`);
+
+      const response = await axios.get(endpoint.url, {
+        params: {
+          variables: JSON.stringify(endpoint.variables),
+          features: JSON.stringify(features),
+          fieldToggles: JSON.stringify(fieldToggles)
+        },
+        headers: {
+          ...headers,
+          Cookie: authData.cookieString
+        }
+      });
+
+      console.log(`Response received! Status: ${response.status}`);
+
+      // Check if we have a valid timeline in the response
+      const hasTimeline =
+        response.data?.data?.user?.result?.timeline?.timeline ||
+        response.data?.data?.user?.result?.timeline_v2?.timeline ||
+        response.data?.data?.user_tweets_and_replies?.timeline?.timeline;
+
+      if (hasTimeline) {
+        console.log("Found valid timeline in response!");
+        return {
+          data: response.data,
+          endpoint: endpoint.url
+        };
+      } else {
+        console.log("No valid timeline in this endpoint's response, trying next...");
+      }
+    } catch (error) {
+      console.error(`Error with endpoint ${endpoint.url}:`, error.message);
+      // Continue to next endpoint
+    }
+  }
+
+  // If all endpoints failed, throw an error
+  throw new Error("All Twitter API endpoints failed to return valid data");
+}
+
+/**
+ * Extract tweets and next cursor from response
+ * @param {Object} response - Twitter API response object
+ * @returns {Object} - Contains tweets array and nextCursor
+ */
+function extractTweetsFromResponse(response) {
+  const tweets = [];
+  let nextCursor = null;
+
+  try {
+    const data = response.data;
+    const endpointUrl = response.endpoint;
+    let timelineObj = null;
+
+    // Try different paths based on the endpoint
+    if (endpointUrl.includes('UserTweets')) {
+      timelineObj = data?.data?.user?.result?.timeline?.timeline;
+    } else if (endpointUrl.includes('UserTweetsAndReplies')) {
+      timelineObj = data?.data?.user_tweets_and_replies?.timeline?.timeline;
+    }
+
+    if (!timelineObj) {
+      console.log("Failed to find timeline in response");
+      return { tweets, nextCursor };
+    }
+
+    // The tweets should be in the TimelineAddEntries instruction
+    if (!timelineObj.instructions || timelineObj.instructions.length < 1) {
+      console.log("Timeline instructions missing or incomplete");
+      return { tweets, nextCursor };
+    }
+
+    // Get the TimelineAddEntries instruction
+    const addEntriesInstruction = timelineObj.instructions.find(instr => instr.type === "TimelineAddEntries");
+
+    if (!addEntriesInstruction || !addEntriesInstruction.entries) {
+      console.log("No TimelineAddEntries instruction found");
+      return { tweets, nextCursor };
+    }
+
+    console.log(`Found ${addEntriesInstruction.entries.length} entries`);
+
+    // Process entries to find tweets and cursor
+    for (const entry of addEntriesInstruction.entries) {
+      // Extract cursor for pagination
+      if (entry.content &&
+          entry.content.entryType === "TimelineTimelineCursor" &&
+          entry.content.cursorType === "Bottom") {
+        nextCursor = entry.content.value;
+        console.log(`Found pagination cursor: ${nextCursor ? nextCursor.substring(0, 20) + '...' : 'None'}`);
+      }
+
+      // If the entry contains tweet content
+      if (entry.content && entry.content.entryType === "TimelineTimelineItem") {
+        const tweetItem = entry.content.itemContent;
+
+        // Regular tweets
+        if (tweetItem && tweetItem.tweet_results && tweetItem.tweet_results.result) {
+          const tweet = tweetItem.tweet_results.result;
+
+          // Only add if it has legacy data
+          if (tweet.legacy) {
+            // Extract user data if available
+            let user = {};
+            if (tweet.core && tweet.core.user_results && tweet.core.user_results.result) {
+              user = tweet.core.user_results.result.legacy || {};
+            }
+
+            tweets.push({
+              id: tweet.rest_id,
+              text: tweet.legacy.full_text,
+              created_at: tweet.legacy.created_at,
+              retweet_count: tweet.legacy.retweet_count,
+              favorite_count: tweet.legacy.favorite_count,
+              reply_count: tweet.legacy.reply_count,
+              is_reply: !!tweet.legacy.in_reply_to_status_id,
+              is_retweet: !!tweet.legacy.retweeted_status,
+              in_reply_to_user_id: tweet.legacy.in_reply_to_user_id,
+              in_reply_to_status_id: tweet.legacy.in_reply_to_status_id,
+              language: tweet.legacy.lang,
+              user: {
+                id: tweet.core?.user_results?.result?.rest_id,
+                screen_name: user.screen_name,
+                name: user.name,
+              },
+              entities: tweet.legacy.entities,
+              url: `https://twitter.com/${user.screen_name || 'i/status'}/${tweet.rest_id}`
+            });
+          }
+        }
+      }
+    }
+
+    console.log(`Successfully extracted ${tweets.length} tweets`);
+
+  } catch (error) {
+    console.error("Error extracting tweets from response:", error.message);
+  }
+
+  return { tweets, nextCursor };
+}
+
+module.exports = {
+  makeTwitterRequest,
+  extractTweetsFromResponse
+};
+
