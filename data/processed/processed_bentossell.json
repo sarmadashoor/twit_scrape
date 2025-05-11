@@ -1,0 +1,1619 @@
+[
+  {
+    "id": "1920823778130440565",
+    "text": "\"sign in with openai\" isn't enough\n\nit'll be huge im sure for bringing contextual memory to new apps you try\n\nbut you still have to sign in\n\nwhich is why owning a browser, or hardware you use all the time will be huge for \"memory in your apps\"",
+    "created_at": "Fri May 09 12:50:50 +0000 2025",
+    "retweet_count": 4,
+    "favorite_count": 77,
+    "reply_count": 13,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1920823778130440565"
+  },
+  {
+    "id": "1920793539669053468",
+    "text": "RT @browserbasehq: Today we're announcing our revamped MCP Server for web automation 🅱️\n\nAdditional tools, enhanced session management, and…",
+    "created_at": "Fri May 09 10:50:41 +0000 2025",
+    "retweet_count": 16,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1757344117426896896",
+          "name": "browserbase 🅱️",
+          "screen_name": "browserbasehq",
+          "indices": [
+            3,
+            17
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1920793539669053468"
+  },
+  {
+    "id": "1920094209018581399",
+    "text": "applying to YC summer batch?\n\nwant to get your ai product in front of 125k potential users before you apply?\n\nreply here with what you're building and we'll include some in the newsletter",
+    "created_at": "Wed May 07 12:31:47 +0000 2025",
+    "retweet_count": 28,
+    "favorite_count": 812,
+    "reply_count": 363,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1920094209018581399"
+  },
+  {
+    "id": "1919858072622612512",
+    "text": "RT @create_xyz: pov: you want to make money online but cant code. https://t.co/6CztVOheZ1",
+    "created_at": "Tue May 06 20:53:28 +0000 2025",
+    "retweet_count": 14,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/6CztVOheZ1",
+          "expanded_url": "https://x.com/create_xyz/status/1919805509710053571/video/1",
+          "id_str": "1919787755690930176",
+          "indices": [
+            66,
+            89
+          ],
+          "media_key": "13_1919787755690930176",
+          "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/1919787755690930176/img/GyRLkP5kPn5w837F.jpg",
+          "source_status_id_str": "1919805509710053571",
+          "source_user_id_str": "1489051225379143680",
+          "type": "video",
+          "url": "https://t.co/6CztVOheZ1",
+          "additional_media_info": {
+            "monetizable": false,
+            "source_user": {
+              "user_results": {
+                "result": {
+                  "__typename": "User",
+                  "id": "VXNlcjoxNDg5MDUxMjI1Mzc5MTQzNjgw",
+                  "rest_id": "1489051225379143680",
+                  "affiliates_highlighted_label": {},
+                  "has_graduated_access": true,
+                  "is_blue_verified": true,
+                  "legacy": {
+                    "following": false,
+                    "can_dm": true,
+                    "can_media_tag": true,
+                    "created_at": "Thu Feb 03 01:40:56 +0000 2022",
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "description": "yes, you can just create things.",
+                    "entities": {
+                      "description": {
+                        "urls": []
+                      },
+                      "url": {
+                        "urls": [
+                          {
+                            "display_url": "create.xyz",
+                            "expanded_url": "https://create.xyz",
+                            "url": "https://t.co/9DaVUoBK2Z",
+                            "indices": [
+                              0,
+                              23
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "fast_followers_count": 0,
+                    "favourites_count": 7226,
+                    "followers_count": 6493,
+                    "friends_count": 9,
+                    "has_custom_timelines": false,
+                    "is_translator": false,
+                    "listed_count": 68,
+                    "location": "SF",
+                    "media_count": 412,
+                    "name": "Create",
+                    "normal_followers_count": 6493,
+                    "pinned_tweet_ids_str": [
+                      "1917742513882030139"
+                    ],
+                    "possibly_sensitive": false,
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1489051225379143680/1741836153",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1900025432059138048/RrdTofcL_normal.jpg",
+                    "profile_interstitial_type": "",
+                    "screen_name": "create_xyz",
+                    "statuses_count": 1298,
+                    "translator_type": "none",
+                    "url": "https://t.co/9DaVUoBK2Z",
+                    "verified": false,
+                    "verified_type": "Business",
+                    "want_retweets": false,
+                    "withheld_in_countries": []
+                  },
+                  "parody_commentary_fan_label": "None",
+                  "profile_image_shape": "Square",
+                  "professional": {
+                    "rest_id": "1702435628187824575",
+                    "professional_type": "Business",
+                    "category": []
+                  },
+                  "tipjar_settings": {},
+                  "verification": {
+                    "verified": false,
+                    "verified_type": "Business"
+                  }
+                }
+              }
+            }
+          },
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "sizes": {
+            "large": {
+              "h": 1152,
+              "w": 2048,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 675,
+              "w": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 383,
+              "w": 680,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 2160,
+            "width": 3840,
+            "focus_rects": []
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "video_info": {
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "duration_millis": 56166,
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "url": "https://video.twimg.com/amplify_video/1919787755690930176/pl/J_9V1wEowKNM5L-s.m3u8?tag=16"
+              },
+              {
+                "bitrate": 288000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1919787755690930176/vid/avc1/480x270/vpxskx0x2B8hqv4P.mp4?tag=16"
+              },
+              {
+                "bitrate": 832000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1919787755690930176/vid/avc1/640x360/sg3mZDn46cqCAoxt.mp4?tag=16"
+              },
+              {
+                "bitrate": 2176000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1919787755690930176/vid/avc1/1280x720/Vgsg196kPmRKDXMo.mp4?tag=16"
+              },
+              {
+                "bitrate": 10368000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1919787755690930176/vid/avc1/1920x1080/cfJwpt4vHJ8JG0CC.mp4?tag=16"
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "13_1919787755690930176"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1489051225379143680",
+          "name": "Create",
+          "screen_name": "create_xyz",
+          "indices": [
+            3,
+            14
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1919858072622612512"
+  },
+  {
+    "id": "1919463064803434807",
+    "text": "RT @daniel_dhawan: Big news: Rork raised $2.8M pre-seed &amp; is now the fastest growing app that builds mobile apps\n\nWe're backed by a16z @spe…",
+    "created_at": "Mon May 05 18:43:51 +0000 2025",
+    "retweet_count": 33,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1079512541498363904",
+          "name": "Daniel Dhawan",
+          "screen_name": "daniel_dhawan",
+          "indices": [
+            3,
+            17
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1919463064803434807"
+  },
+  {
+    "id": "1919336113577013686",
+    "text": "RT @nikitabier: The entire tech community is under the impression that AI coding will result in power flowing from engineers to “idea guys.…",
+    "created_at": "Mon May 05 10:19:23 +0000 2025",
+    "retweet_count": 383,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "636513296",
+          "name": "Nikita Bier",
+          "screen_name": "nikitabier",
+          "indices": [
+            3,
+            14
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1919336113577013686"
+  },
+  {
+    "id": "1919120008120037836",
+    "text": "Can confirm @gregisenberg is handsomer and taller irl https://t.co/IPccowYCCU",
+    "created_at": "Sun May 04 20:00:40 +0000 2025",
+    "retweet_count": 2,
+    "favorite_count": 88,
+    "reply_count": 12,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/IPccowYCCU",
+          "expanded_url": "https://x.com/bentossell/status/1919120008120037836/photo/1",
+          "id_str": "1919120002059247616",
+          "indices": [
+            54,
+            77
+          ],
+          "media_key": "3_1919120002059247616",
+          "media_url_https": "https://pbs.twimg.com/media/GqIVeVQWoAAQ2Z2.jpg",
+          "type": "photo",
+          "url": "https://t.co/IPccowYCCU",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": [
+                {
+                  "x": 1078,
+                  "y": 578,
+                  "h": 72,
+                  "w": 72
+                },
+                {
+                  "x": 116,
+                  "y": 996,
+                  "h": 546,
+                  "w": 546
+                }
+              ]
+            },
+            "medium": {
+              "faces": [
+                {
+                  "x": 631,
+                  "y": 338,
+                  "h": 42,
+                  "w": 42
+                },
+                {
+                  "x": 67,
+                  "y": 583,
+                  "h": 319,
+                  "w": 319
+                }
+              ]
+            },
+            "small": {
+              "faces": [
+                {
+                  "x": 357,
+                  "y": 191,
+                  "h": 23,
+                  "w": 23
+                },
+                {
+                  "x": 38,
+                  "y": 330,
+                  "h": 181,
+                  "w": 181
+                }
+              ]
+            },
+            "orig": {
+              "faces": [
+                {
+                  "x": 1078,
+                  "y": 578,
+                  "h": 72,
+                  "w": 72
+                },
+                {
+                  "x": 116,
+                  "y": 996,
+                  "h": 546,
+                  "w": 546
+                }
+              ]
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 2048,
+              "w": 1536,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 1200,
+              "w": 900,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 680,
+              "w": 510,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 2048,
+            "width": 1536,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 850,
+                "w": 1536,
+                "h": 860
+              },
+              {
+                "x": 0,
+                "y": 512,
+                "w": 1536,
+                "h": 1536
+              },
+              {
+                "x": 0,
+                "y": 297,
+                "w": 1536,
+                "h": 1751
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1024,
+                "h": 2048
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1536,
+                "h": 2048
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1919120002059247616"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "14642331",
+          "name": "GREG ISENBERG",
+          "screen_name": "gregisenberg",
+          "indices": [
+            12,
+            25
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1919120008120037836",
+    "imageOcrResults": [
+      {
+        "url": "https://pbs.twimg.com/media/GqIVeVQWoAAQ2Z2.jpg",
+        "ocrText": "BY a\n> a\n§ 2a - Gan |\n\\ F. = PS\n| €) 1 c \\\ni < Ny \\ <4 3 4 a Ve\nny Su WA - We\nXi WW\n% f= ! \\ £. ~~\n¢ ~ a’ ) IS",
+        "confidence": 34
+      }
+    ],
+    "combinedImageText": "BY a\n> a\n§ 2a - Gan |\n\\ F. = PS\n| €) 1 c \\\ni < Ny \\ <4 3 4 a Ve\nny Su WA - We\nXi WW\n% f= ! \\ £. ~~\n¢ ~ a’ ) IS"
+  },
+  {
+    "id": "1918822278240051509",
+    "text": "RT @signulll: the internet was always meant for fun. if you’re not laughing, scheming, shitposting, or stumbling into something weird &amp; bri…",
+    "created_at": "Sun May 04 00:17:35 +0000 2025",
+    "retweet_count": 154,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1717671858521194496",
+          "name": "signüll",
+          "screen_name": "signulll",
+          "indices": [
+            3,
+            12
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1918822278240051509"
+  },
+  {
+    "id": "1918770106747785605",
+    "text": "Curiosity is all that matters",
+    "created_at": "Sat May 03 20:50:17 +0000 2025",
+    "retweet_count": 3,
+    "favorite_count": 64,
+    "reply_count": 11,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1918770106747785605"
+  },
+  {
+    "id": "1918365682368143752",
+    "text": "RT @sidyadav: Update: \n\nCircle is now profitable and on track for $50M+ ARR by EOY.\n\nWe just had our best month ever with 100% annualized g…",
+    "created_at": "Fri May 02 18:03:14 +0000 2025",
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "7783512",
+          "name": "Sid Yadav",
+          "screen_name": "sidyadav",
+          "indices": [
+            3,
+            12
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1918365682368143752"
+  },
+  {
+    "id": "1917969372007772466",
+    "text": "RT @dhruvtruth: Submitting to the App Store sucks. \n\nIt's like filing your taxes by hand. \n\nSo we just launched a single publish button.…",
+    "created_at": "Thu May 01 15:48:27 +0000 2025",
+    "retweet_count": 19,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "318328164",
+          "name": "Dhruv",
+          "screen_name": "dhruvtruth",
+          "indices": [
+            3,
+            14
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1917969372007772466"
+  },
+  {
+    "id": "1917014343666798663",
+    "text": "RT @Calclavia: I'm hiring founding engineers to join Smithery to build the AI gateway of the future.\n\nWe're currently a team of 2 and the l…",
+    "created_at": "Tue Apr 29 00:33:30 +0000 2025",
+    "retweet_count": 12,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "42179566",
+          "name": "Henry Mao",
+          "screen_name": "Calclavia",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1917014343666798663"
+  },
+  {
+    "id": "1916825351390363842",
+    "text": "RT @kiwicopple: the journey to 2 million developers → @supabase https://t.co/3V2v8wxjxr",
+    "created_at": "Mon Apr 28 12:02:31 +0000 2025",
+    "retweet_count": 33,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/3V2v8wxjxr",
+          "expanded_url": "https://x.com/kiwicopple/status/1916813407350911292/photo/1",
+          "id_str": "1916813403370491904",
+          "indices": [
+            64,
+            87
+          ],
+          "media_key": "3_1916813403370491904",
+          "media_url_https": "https://pbs.twimg.com/media/GpnjonibEAAuykj.jpg",
+          "source_status_id_str": "1916813407350911292",
+          "source_user_id_str": "832817861844275200",
+          "type": "photo",
+          "url": "https://t.co/3V2v8wxjxr",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": []
+            },
+            "medium": {
+              "faces": []
+            },
+            "small": {
+              "faces": []
+            },
+            "orig": {
+              "faces": []
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 1446,
+              "w": 2048,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 847,
+              "w": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 480,
+              "w": 680,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1500,
+            "width": 2124,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 311,
+                "w": 2124,
+                "h": 1189
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1500,
+                "h": 1500
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1316,
+                "h": 1500
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 750,
+                "h": 1500
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 2124,
+                "h": 1500
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1916813403370491904"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "832817861844275200",
+          "name": "Paul Copplestone - e/postgres",
+          "screen_name": "kiwicopple",
+          "indices": [
+            3,
+            14
+          ]
+        },
+        {
+          "id_str": "1219566488325017602",
+          "name": "Supabase",
+          "screen_name": "supabase",
+          "indices": [
+            54,
+            63
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1916825351390363842",
+    "imageOcrResults": [
+      {
+        "url": "https://pbs.twimg.com/media/GpnjonibEAAuykj.jpg",
+        "ocrText": ".\nCo\n.",
+        "confidence": 16
+      }
+    ],
+    "combinedImageText": ".\nCo\n."
+  },
+  {
+    "id": "1915062509704188174",
+    "text": "RT @mattshumer_: Github for prompts is here.\n\n100% free for everyone.\n\nLink in next post: https://t.co/FQN5Ko1Ncz",
+    "created_at": "Wed Apr 23 15:17:37 +0000 2025",
+    "retweet_count": 315,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/FQN5Ko1Ncz",
+          "expanded_url": "https://x.com/mattshumer_/status/1915061959591895269/video/1",
+          "id_str": "1915061594473529344",
+          "indices": [
+            90,
+            113
+          ],
+          "media_key": "13_1915061594473529344",
+          "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/1915061594473529344/img/htreyo-dE3v8pA2i.jpg",
+          "source_status_id_str": "1915061959591895269",
+          "source_user_id_str": "1194889317388374016",
+          "type": "video",
+          "url": "https://t.co/FQN5Ko1Ncz",
+          "additional_media_info": {
+            "monetizable": false,
+            "source_user": {
+              "user_results": {
+                "result": {
+                  "__typename": "User",
+                  "id": "VXNlcjoxMTk0ODg5MzE3Mzg4Mzc0MDE2",
+                  "rest_id": "1194889317388374016",
+                  "affiliates_highlighted_label": {},
+                  "has_graduated_access": true,
+                  "is_blue_verified": true,
+                  "legacy": {
+                    "following": false,
+                    "can_dm": true,
+                    "can_media_tag": true,
+                    "created_at": "Thu Nov 14 08:06:43 +0000 2019",
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "description": "CEO @HyperWriteAI, @OthersideAI - teaching you how prompt. Try https://t.co/z3rZszeXxZ — AI photoshop, https://t.co/PSUlubx5bb — Github for prompts",
+                    "entities": {
+                      "description": {
+                        "urls": [
+                          {
+                            "display_url": "PicPrompter.com",
+                            "expanded_url": "https://PicPrompter.com",
+                            "url": "https://t.co/z3rZszeXxZ",
+                            "indices": [
+                              63,
+                              86
+                            ]
+                          },
+                          {
+                            "display_url": "ShumerPrompt.com",
+                            "expanded_url": "https://ShumerPrompt.com",
+                            "url": "https://t.co/PSUlubx5bb",
+                            "indices": [
+                              103,
+                              126
+                            ]
+                          }
+                        ]
+                      },
+                      "url": {
+                        "urls": [
+                          {
+                            "display_url": "hyperwriteai.com",
+                            "expanded_url": "https://www.hyperwriteai.com/",
+                            "url": "https://t.co/UKjp4pdVJt",
+                            "indices": [
+                              0,
+                              23
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "fast_followers_count": 0,
+                    "favourites_count": 8053,
+                    "followers_count": 86165,
+                    "friends_count": 1425,
+                    "has_custom_timelines": true,
+                    "is_translator": false,
+                    "listed_count": 1926,
+                    "location": "The Otherside / NYC",
+                    "media_count": 666,
+                    "name": "Matt Shumer",
+                    "normal_followers_count": 86165,
+                    "pinned_tweet_ids_str": [
+                      "1646234077798727686"
+                    ],
+                    "possibly_sensitive": false,
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1194889317388374016/1605142094",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1490950574090571778/BtgOaqUP_normal.jpg",
+                    "profile_interstitial_type": "",
+                    "screen_name": "mattshumer_",
+                    "statuses_count": 7287,
+                    "translator_type": "none",
+                    "url": "https://t.co/UKjp4pdVJt",
+                    "verified": false,
+                    "want_retweets": false,
+                    "withheld_in_countries": []
+                  },
+                  "parody_commentary_fan_label": "None",
+                  "profile_image_shape": "Circle",
+                  "professional": {
+                    "rest_id": "1504611049990893599",
+                    "professional_type": "Creator",
+                    "category": [
+                      {
+                        "id": 958,
+                        "name": "Entrepreneur",
+                        "icon_name": "IconBriefcaseStroke"
+                      }
+                    ]
+                  },
+                  "tipjar_settings": {},
+                  "super_follow_eligible": true,
+                  "verification": {
+                    "verified": false
+                  }
+                }
+              }
+            }
+          },
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "sizes": {
+            "large": {
+              "h": 1080,
+              "w": 1784,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 726,
+              "w": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 412,
+              "w": 680,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1080,
+            "width": 1784,
+            "focus_rects": []
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "video_info": {
+            "aspect_ratio": [
+              223,
+              135
+            ],
+            "duration_millis": 120831,
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "url": "https://video.twimg.com/amplify_video/1915061594473529344/pl/PYJGnSVgXVucrur9.m3u8?tag=16&v=be8"
+              },
+              {
+                "bitrate": 288000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1915061594473529344/vid/avc1/446x270/szDZNULaoxsJ_Wcr.mp4?tag=16"
+              },
+              {
+                "bitrate": 832000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1915061594473529344/vid/avc1/594x360/jsTEBAA8Iz-hqLhB.mp4?tag=16"
+              },
+              {
+                "bitrate": 2176000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1915061594473529344/vid/avc1/1188x720/gd5QzlcAGk3LJAdf.mp4?tag=16"
+              },
+              {
+                "bitrate": 10368000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/1915061594473529344/vid/avc1/1784x1080/uwM98fH4UQmOb2K-.mp4?tag=16"
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "13_1915061594473529344"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1194889317388374016",
+          "name": "Matt Shumer",
+          "screen_name": "mattshumer_",
+          "indices": [
+            3,
+            15
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1915062509704188174"
+  },
+  {
+    "id": "1914745681484407205",
+    "text": "RT @kiwicopple: @supabase Series D, led by @Accel \n\nA huge thank you to our community. Some of you who have been supporting from the start…",
+    "created_at": "Tue Apr 22 18:18:39 +0000 2025",
+    "retweet_count": 130,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "832817861844275200",
+          "name": "Paul Copplestone - e/postgres",
+          "screen_name": "kiwicopple",
+          "indices": [
+            3,
+            14
+          ]
+        },
+        {
+          "id_str": "1219566488325017602",
+          "name": "Supabase",
+          "screen_name": "supabase",
+          "indices": [
+            16,
+            25
+          ]
+        },
+        {
+          "id_str": "33846451",
+          "name": "Accel",
+          "screen_name": "Accel",
+          "indices": [
+            43,
+            49
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1914745681484407205"
+  },
+  {
+    "id": "1914681466501349602",
+    "text": "vibe coding is dead\n\nits just called coding",
+    "created_at": "Tue Apr 22 14:03:29 +0000 2025",
+    "retweet_count": 16,
+    "favorite_count": 439,
+    "reply_count": 79,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1914681466501349602"
+  },
+  {
+    "id": "1913213719976288719",
+    "text": "RT @kiwicopple: i can't believe @DrizzleORM legal team won't let us add tabs to the @supabase dashboard https://t.co/2v4HFgH9yF",
+    "created_at": "Fri Apr 18 12:51:11 +0000 2025",
+    "retweet_count": 32,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/2v4HFgH9yF",
+          "expanded_url": "https://x.com/kiwicopple/status/1912931810574741545/photo/1",
+          "id_str": "1912931626977509376",
+          "indices": [
+            104,
+            127
+          ],
+          "media_key": "3_1912931626977509376",
+          "media_url_https": "https://pbs.twimg.com/media/GowZLfmawAAIsSH.jpg",
+          "source_status_id_str": "1912931810574741545",
+          "source_user_id_str": "832817861844275200",
+          "type": "photo",
+          "url": "https://t.co/2v4HFgH9yF",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": []
+            },
+            "medium": {
+              "faces": []
+            },
+            "small": {
+              "faces": []
+            },
+            "orig": {
+              "faces": []
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 1732,
+              "w": 1408,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 1200,
+              "w": 976,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 680,
+              "w": 553,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1732,
+            "width": 1408,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 168,
+                "w": 1408,
+                "h": 788
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1408,
+                "h": 1408
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1408,
+                "h": 1605
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 866,
+                "h": 1732
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1408,
+                "h": 1732
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1912931626977509376"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "832817861844275200",
+          "name": "Paul Copplestone - e/postgres",
+          "screen_name": "kiwicopple",
+          "indices": [
+            3,
+            14
+          ]
+        },
+        {
+          "id_str": "1567829160432656385",
+          "name": "Drizzle ORM",
+          "screen_name": "DrizzleORM",
+          "indices": [
+            32,
+            43
+          ]
+        },
+        {
+          "id_str": "1219566488325017602",
+          "name": "Supabase",
+          "screen_name": "supabase",
+          "indices": [
+            84,
+            93
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1913213719976288719",
+    "imageOcrResults": [
+      {
+        "url": "https://pbs.twimg.com/media/GowZLfmawAAIsSH.jpg",
+        "ocrText": "Drizzle ORM\n760 Market Street, Floor 10\nSan Francisco, CA 9410\nSupabase Inc.\nDear Supabase:\nI'am the General Counsel at Drizzle ORM (‘Drizzle’). Drizzle is the\ncreator of the “Tabs” interface in Drizzle Studio, a key visual component\nof our open-source ORM platform.\nWe've been closely following the evolution of your product and are glad\nto see continued innovation in the developer tooling space. However,\nwe recently noticed that your new database interface also includes a\n“Tabs” design that appears substantially similar to Drizzle Studio's layou,\nfunctionality, and presentation.\nWhile we respect your work, we believe this resemblance may create\nconfusion for users and could constitute unauthorized use of our distinc-\ntive interface. As such, we kindly request that you revise our implemen-\ntation, rename the feature, and ensure it is visually and functionally\ndistinct from Drizzle Studio.\nWe'd prefer to resolve this amicably and quickly. Please get in touch to\nconfirm you've received this letter and that you'll make the requested\nchanges.\nSincerely,\nGeneral Counsel\nDrizzle ORM",
+        "confidence": 93
+      }
+    ],
+    "combinedImageText": "Drizzle ORM\n760 Market Street, Floor 10\nSan Francisco, CA 9410\nSupabase Inc.\nDear Supabase:\nI'am the General Counsel at Drizzle ORM (‘Drizzle’). Drizzle is the\ncreator of the “Tabs” interface in Drizzle Studio, a key visual component\nof our open-source ORM platform.\nWe've been closely following the evolution of your product and are glad\nto see continued innovation in the developer tooling space. However,\nwe recently noticed that your new database interface also includes a\n“Tabs” design that appears substantially similar to Drizzle Studio's layou,\nfunctionality, and presentation.\nWhile we respect your work, we believe this resemblance may create\nconfusion for users and could constitute unauthorized use of our distinc-\ntive interface. As such, we kindly request that you revise our implemen-\ntation, rename the feature, and ensure it is visually and functionally\ndistinct from Drizzle Studio.\nWe'd prefer to resolve this amicably and quickly. Please get in touch to\nconfirm you've received this letter and that you'll make the requested\nchanges.\nSincerely,\nGeneral Counsel\nDrizzle ORM"
+  },
+  {
+    "id": "1913178803246899585",
+    "text": "If katy perry is an astronaut \n\nVibe coders are vp of eng",
+    "created_at": "Fri Apr 18 10:32:26 +0000 2025",
+    "retweet_count": 0,
+    "favorite_count": 50,
+    "reply_count": 12,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1913178803246899585"
+  },
+  {
+    "id": "1912970272317005931",
+    "text": "RT @sidyadav: We're taking branded apps to a whole new level today with the launch of the custom app builder.\n\nTeam really cooked on this o…",
+    "created_at": "Thu Apr 17 20:43:48 +0000 2025",
+    "retweet_count": 14,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "7783512",
+          "name": "Sid Yadav",
+          "screen_name": "sidyadav",
+          "indices": [
+            3,
+            12
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1912970272317005931"
+  },
+  {
+    "id": "1912918866197438944",
+    "text": "RT @etarczynski: I'm launching Tech Today.\n\n- A daily show on the most important stories in tech.\n- 10 minutes per day, 5 days per week.\n-…",
+    "created_at": "Thu Apr 17 17:19:32 +0000 2025",
+    "retweet_count": 48,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1358447557",
+          "name": "Eric Tarczynski",
+          "screen_name": "etarczynski",
+          "indices": [
+            3,
+            15
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1912918866197438944"
+  },
+  {
+    "id": "1912917552805671377",
+    "text": "RT @0interestrates: Our biggest update so far: We're excited to announce Collaboration in @JuliusAI_  \n\nJulius is now your team's AI Data A…",
+    "created_at": "Thu Apr 17 17:14:19 +0000 2025",
+    "retweet_count": 37,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1322297149887979520",
+          "name": "rahul",
+          "screen_name": "0interestrates",
+          "indices": [
+            3,
+            18
+          ]
+        },
+        {
+          "id_str": "1590540135057092608",
+          "name": "Julius AI",
+          "screen_name": "JuliusAI_",
+          "indices": [
+            90,
+            100
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1912917552805671377"
+  },
+  {
+    "id": "1912578512403255412",
+    "text": "RT @boltdotnew: It's time to set a Guinness World Record.\n\nRegistration is now LIVE at https://t.co/y3OwMLa1N1:\n→ $1M+ in prizes\n→ Global I…",
+    "created_at": "Wed Apr 16 18:47:06 +0000 2025",
+    "retweet_count": 1456,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [
+        {
+          "display_url": "hackathon.dev",
+          "expanded_url": "http://hackathon.dev",
+          "url": "https://t.co/y3OwMLa1N1",
+          "indices": [
+            87,
+            110
+          ]
+        }
+      ],
+      "user_mentions": [
+        {
+          "id_str": "2279695508",
+          "name": "bolt.new",
+          "screen_name": "boltdotnew",
+          "indices": [
+            3,
+            14
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1912578512403255412"
+  },
+  {
+    "id": "1912560312630538563",
+    "text": "Why gumroad acquired small bets (my predictions)\n\n- gumroads in a tough market\n- ai is changing everything etc etc\n- so they decide to kill themselves to open themselves up completely\n- build open source tools to replace internal ones, ai-first\n- build OS infrastructure and tools",
+    "created_at": "Wed Apr 16 17:34:46 +0000 2025",
+    "retweet_count": 4,
+    "favorite_count": 152,
+    "reply_count": 12,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1912560312630538563"
+  },
+  {
+    "id": "1912159714160288247",
+    "text": "RT @thisisgrantlee: Gamma's first AI launch was exactly 2 years ago. We were pre-revenue - just a small team crammed in a 2-bedroom apartme…",
+    "created_at": "Tue Apr 15 15:02:56 +0000 2025",
+    "retweet_count": 61,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1319250540480598026",
+          "name": "Grant Lee",
+          "screen_name": "thisisgrantlee",
+          "indices": [
+            3,
+            18
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/bentossell/1912159714160288247"
+  },
+  {
+    "id": "1912147635533729883",
+    "text": "replit needs;\n\n- model picker\n- better solution for docs &amp; web search\n- modes (like cursor)\n- rules\n\nthe agent is great but i think having more control on how it behaves, its model, what its doing/changing etc would be better - it feels abstracted too much sometimes",
+    "created_at": "Tue Apr 15 14:14:56 +0000 2025",
+    "retweet_count": 3,
+    "favorite_count": 81,
+    "reply_count": 23,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1912147635533729883"
+  },
+  {
+    "id": "1911796935985340648",
+    "text": "a fund for builders\n\n- $100k checks\n- 12 months to go full-time on your idea(s)\n\ncoming soon...\n\nif you want to invest, email me ben @ bensbites . com\n\nsubject: builder fund\nbody: first + last name, accredited (y/n), check size",
+    "created_at": "Mon Apr 14 15:01:23 +0000 2025",
+    "retweet_count": 33,
+    "favorite_count": 618,
+    "reply_count": 42,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1911796935985340648"
+  },
+  {
+    "id": "1910783426329784697",
+    "text": "nah but seriously, you mfers used to write this much code by hand?! you're mad",
+    "created_at": "Fri Apr 11 19:54:04 +0000 2025",
+    "retweet_count": 50,
+    "favorite_count": 1134,
+    "reply_count": 99,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "53175441",
+      "screen_name": "bentossell",
+      "name": "Ben Tossell"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/bentossell/1910783426329784697"
+  }
+]

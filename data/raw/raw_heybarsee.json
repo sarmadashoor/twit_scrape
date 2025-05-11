@@ -1,0 +1,323 @@
+[
+  {
+    "id": "1914342592340255091",
+    "text": "RT @heyBarsee: This is wild.\n\nAI-generated POV videos are blowing up the internet\n\n11 wild examples (100% AI-generated):\n\n1. POV: You wake…",
+    "created_at": "Mon Apr 21 15:36:55 +0000 2025",
+    "retweet_count": 296,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "1552871185431527424",
+      "screen_name": "heyBarsee",
+      "name": "Barsee 🐶"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1552871185431527424",
+          "name": "Barsee 🐶",
+          "screen_name": "heyBarsee",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/heyBarsee/1914342592340255091"
+  },
+  {
+    "id": "1905298814514385402",
+    "text": "RT @heyBarsee: We just had one of the biggest days in AI.\n\n-Deepseek-V3\n-Google Gemini 2.5\n-GPT-4o image generation \n-Zapier MCP protocol…",
+    "created_at": "Thu Mar 27 16:40:10 +0000 2025",
+    "retweet_count": 2131,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "1552871185431527424",
+      "screen_name": "heyBarsee",
+      "name": "Barsee 🐶"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1552871185431527424",
+          "name": "Barsee 🐶",
+          "screen_name": "heyBarsee",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/heyBarsee/1905298814514385402"
+  },
+  {
+    "id": "1905175485329617297",
+    "text": "This is insane.\n\nLord of the Rings in Studio Ghibli\nhttps://t.co/AioZkVhPc4",
+    "created_at": "Thu Mar 27 08:30:06 +0000 2025",
+    "retweet_count": 241,
+    "favorite_count": 2047,
+    "reply_count": 89,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "1552871185431527424",
+      "screen_name": "heyBarsee",
+      "name": "Barsee 🐶"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/AioZkVhPc4",
+          "expanded_url": "https://x.com/PJaccetturo/status/1905151190872309907/video/1",
+          "id_str": "1905144590388310016",
+          "indices": [
+            52,
+            75
+          ],
+          "media_key": "7_1905144590388310016",
+          "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1905144590388310016/pu/img/JR3xBya82OLfQh2_.jpg",
+          "source_status_id_str": "1905151190872309907",
+          "source_user_id_str": "47636428",
+          "type": "video",
+          "url": "https://t.co/AioZkVhPc4",
+          "additional_media_info": {
+            "monetizable": false,
+            "source_user": {
+              "user_results": {
+                "result": {
+                  "__typename": "User",
+                  "id": "VXNlcjo0NzYzNjQyOA==",
+                  "rest_id": "47636428",
+                  "affiliates_highlighted_label": {},
+                  "has_graduated_access": true,
+                  "is_blue_verified": true,
+                  "legacy": {
+                    "following": false,
+                    "can_dm": true,
+                    "can_media_tag": true,
+                    "created_at": "Tue Jun 16 14:28:03 +0000 2009",
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "description": "AI Filmmaker - 100M+ Views | Featured in Variety, Hollywood Reporter, BBC News.\nWant to master AI video? Join my newsletter 👇🏼",
+                    "entities": {
+                      "description": {
+                        "urls": []
+                      },
+                      "url": {
+                        "urls": [
+                          {
+                            "display_url": "pjace.beehiiv.com",
+                            "expanded_url": "https://pjace.beehiiv.com/",
+                            "url": "https://t.co/iK25xx9Czr",
+                            "indices": [
+                              0,
+                              23
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "fast_followers_count": 0,
+                    "favourites_count": 8310,
+                    "followers_count": 25088,
+                    "friends_count": 1266,
+                    "has_custom_timelines": true,
+                    "is_translator": false,
+                    "listed_count": 313,
+                    "location": "",
+                    "media_count": 301,
+                    "name": "PJ Ace",
+                    "normal_followers_count": 25088,
+                    "pinned_tweet_ids_str": [
+                      "1912050794607554574"
+                    ],
+                    "possibly_sensitive": false,
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/47636428/1712606077",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1777424827730796545/ZzxKs8Pf_normal.jpg",
+                    "profile_interstitial_type": "",
+                    "screen_name": "PJaccetturo",
+                    "statuses_count": 3774,
+                    "translator_type": "none",
+                    "url": "https://t.co/iK25xx9Czr",
+                    "verified": false,
+                    "want_retweets": false,
+                    "withheld_in_countries": []
+                  },
+                  "parody_commentary_fan_label": "None",
+                  "profile_image_shape": "Circle",
+                  "tipjar_settings": {},
+                  "verification": {
+                    "verified": false
+                  }
+                }
+              }
+            }
+          },
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "sizes": {
+            "large": {
+              "h": 1152,
+              "w": 1760,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 785,
+              "w": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 445,
+              "w": 680,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1152,
+            "width": 1760,
+            "focus_rects": []
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "video_info": {
+            "aspect_ratio": [
+              55,
+              36
+            ],
+            "duration_millis": 112416,
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "url": "https://video.twimg.com/ext_tw_video/1905144590388310016/pu/pl/Z9DiG9sGngkTgEjx.m3u8?tag=14&v=cff"
+              },
+              {
+                "bitrate": 256000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/1905144590388310016/pu/vid/avc1/412x270/TnrryGJ7Yl7mv98M.mp4?tag=14"
+              },
+              {
+                "bitrate": 832000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/1905144590388310016/pu/vid/avc1/550x360/bBICQnWdzDVpPaC8.mp4?tag=14"
+              },
+              {
+                "bitrate": 2176000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/1905144590388310016/pu/vid/avc1/1100x720/loYhzhBb0907tADj.mp4?tag=14"
+              },
+              {
+                "bitrate": 10368000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/1905144590388310016/pu/vid/avc1/1650x1080/VN2Q2hLxdOWYWaEe.mp4?tag=14"
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "7_1905144590388310016"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/heyBarsee/1905175485329617297"
+  },
+  {
+    "id": "1905149224305713184",
+    "text": "RT @gdb: ChatGPT image generation enables so much creativity!",
+    "created_at": "Thu Mar 27 06:45:45 +0000 2025",
+    "retweet_count": 101,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "1552871185431527424",
+      "screen_name": "heyBarsee",
+      "name": "Barsee 🐶"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "162124540",
+          "name": "Greg Brockman",
+          "screen_name": "gdb",
+          "indices": [
+            3,
+            7
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/heyBarsee/1905149224305713184"
+  },
+  {
+    "id": "1905133951116788204",
+    "text": "RT @heyBarsee: It's been 24 hours since OpenAI unexpectedly shook the AI image world with 4o image generation.\n\nHere are the 14 most mindbl…",
+    "created_at": "Thu Mar 27 05:45:04 +0000 2025",
+    "retweet_count": 14543,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "1552871185431527424",
+      "screen_name": "heyBarsee",
+      "name": "Barsee 🐶"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1552871185431527424",
+          "name": "Barsee 🐶",
+          "screen_name": "heyBarsee",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/heyBarsee/1905133951116788204"
+  }
+]

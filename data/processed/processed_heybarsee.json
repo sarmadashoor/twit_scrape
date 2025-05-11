@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1914342592340255091",
+    "text": "RT @heyBarsee: This is wild.\n\nAI-generated POV videos are blowing up the internet\n\n11 wild examples (100% AI-generated):\n\n1. POV: You wake…",
+    "created_at": "Mon Apr 21 15:36:55 +0000 2025",
+    "retweet_count": 296,
+    "favorite_count": 0,
+    "reply_count": 0,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "1552871185431527424",
+      "screen_name": "heyBarsee",
+      "name": "Barsee 🐶"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "id_str": "1552871185431527424",
+          "name": "Barsee 🐶",
+          "screen_name": "heyBarsee",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ]
+    },
+    "url": "https://twitter.com/heyBarsee/1914342592340255091"
+  }
+]
