@@ -1,0 +1,1145 @@
+{
+  "entryId": "profile-conversation-1921691440589570056",
+  "sortIndex": "1921691440589570040",
+  "content": {
+    "entryType": "TimelineTimelineModule",
+    "__typename": "TimelineTimelineModule",
+    "items": [
+      {
+        "entryId": "profile-conversation-1921691440589570056-tweet-1919440655991841119",
+        "dispensable": true,
+        "item": {
+          "itemContent": {
+            "itemType": "TimelineTweet",
+            "__typename": "TimelineTweet",
+            "tweet_results": {
+              "result": {
+                "__typename": "Tweet",
+                "rest_id": "1919440655991841119",
+                "core": {
+                  "user_results": {
+                    "result": {
+                      "__typename": "User",
+                      "id": "VXNlcjoxNDY0MjMzMQ==",
+                      "rest_id": "14642331",
+                      "affiliates_highlighted_label": {},
+                      "has_graduated_access": true,
+                      "is_blue_verified": true,
+                      "legacy": {
+                        "following": true,
+                        "can_dm": true,
+                        "can_media_tag": true,
+                        "created_at": "Sat May 03 23:08:05 +0000 2008",
+                        "default_profile": false,
+                        "default_profile_image": false,
+                        "description": "I run a portfolio of internet companies. CEO: @latecheckoutplz we build companies like @meetLCA, @boringmarketer etc",
+                        "entities": {
+                          "description": {
+                            "urls": []
+                          },
+                          "url": {
+                            "urls": [
+                              {
+                                "display_url": "gregisenberg.com",
+                                "expanded_url": "http://gregisenberg.com/",
+                                "url": "https://t.co/hz3lcOfwEY",
+                                "indices": [
+                                  0,
+                                  23
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "fast_followers_count": 0,
+                        "favourites_count": 99338,
+                        "followers_count": 468779,
+                        "friends_count": 819,
+                        "has_custom_timelines": true,
+                        "is_translator": false,
+                        "listed_count": 7726,
+                        "location": "more →",
+                        "media_count": 2327,
+                        "name": "GREG ISENBERG",
+                        "normal_followers_count": 468779,
+                        "pinned_tweet_ids_str": [
+                          "1845255860559257671"
+                        ],
+                        "possibly_sensitive": false,
+                        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14642331/1722363147",
+                        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1577116785656139776/5mi0qgTz_normal.jpg",
+                        "profile_interstitial_type": "",
+                        "screen_name": "gregisenberg",
+                        "statuses_count": 57683,
+                        "translator_type": "none",
+                        "url": "https://t.co/hz3lcOfwEY",
+                        "verified": false,
+                        "want_retweets": true,
+                        "withheld_in_countries": []
+                      },
+                      "parody_commentary_fan_label": "None",
+                      "profile_image_shape": "Circle",
+                      "professional": {
+                        "rest_id": "1644527479804002307",
+                        "professional_type": "Creator",
+                        "category": []
+                      },
+                      "tipjar_settings": {
+                        "is_enabled": true,
+                        "cash_app_handle": "gregisenberg",
+                        "venmo_handle": "greg-isenberg"
+                      },
+                      "super_follow_eligible": true,
+                      "verification": {
+                        "verified": false
+                      }
+                    }
+                  }
+                },
+                "unmention_data": {},
+                "edit_control": {
+                  "initial_tweet_id": "1919440113450238146",
+                  "edit_control_initial": {
+                    "edit_tweet_ids": [
+                      "1919440113450238146",
+                      "1919440655991841119"
+                    ],
+                    "editable_until_msecs": "1746468759000",
+                    "is_edit_eligible": false,
+                    "edits_remaining": "4"
+                  }
+                },
+                "previous_counts": {
+                  "bookmark_count": 1,
+                  "favorite_count": 6,
+                  "quote_count": 0,
+                  "reply_count": 0,
+                  "retweet_count": 0
+                },
+                "is_translatable": false,
+                "views": {
+                  "count": "71833",
+                  "state": "EnabledWithCount"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "grok_analysis_button": true,
+                "legacy": {
+                  "bookmark_count": 22,
+                  "bookmarked": false,
+                  "created_at": "Mon May 05 17:14:48 +0000 2025",
+                  "conversation_id_str": "1919440655991841119",
+                  "display_text_range": [
+                    0,
+                    97
+                  ],
+                  "entities": {
+                    "hashtags": [],
+                    "media": [
+                      {
+                        "display_url": "pic.x.com/0vi2fJxyaZ",
+                        "expanded_url": "https://x.com/gregisenberg/status/1919440655991841119/photo/1",
+                        "id_str": "1919440650023632896",
+                        "indices": [
+                          98,
+                          121
+                        ],
+                        "media_key": "3_1919440650023632896",
+                        "media_url_https": "https://pbs.twimg.com/media/GqM5GgAagAAz2M7.jpg",
+                        "type": "photo",
+                        "url": "https://t.co/0vi2fJxyaZ",
+                        "ext_media_availability": {
+                          "status": "Available"
+                        },
+                        "features": {
+                          "large": {
+                            "faces": []
+                          },
+                          "medium": {
+                            "faces": []
+                          },
+                          "small": {
+                            "faces": []
+                          },
+                          "orig": {
+                            "faces": []
+                          }
+                        },
+                        "sizes": {
+                          "large": {
+                            "h": 2048,
+                            "w": 1152,
+                            "resize": "fit"
+                          },
+                          "medium": {
+                            "h": 1200,
+                            "w": 675,
+                            "resize": "fit"
+                          },
+                          "small": {
+                            "h": 680,
+                            "w": 383,
+                            "resize": "fit"
+                          },
+                          "thumb": {
+                            "h": 150,
+                            "w": 150,
+                            "resize": "crop"
+                          }
+                        },
+                        "original_info": {
+                          "height": 2048,
+                          "width": 1152,
+                          "focus_rects": [
+                            {
+                              "x": 0,
+                              "y": 1367,
+                              "w": 1152,
+                              "h": 645
+                            },
+                            {
+                              "x": 0,
+                              "y": 896,
+                              "w": 1152,
+                              "h": 1152
+                            },
+                            {
+                              "x": 0,
+                              "y": 735,
+                              "w": 1152,
+                              "h": 1313
+                            },
+                            {
+                              "x": 51,
+                              "y": 0,
+                              "w": 1024,
+                              "h": 2048
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1152,
+                              "h": 2048
+                            }
+                          ]
+                        },
+                        "allow_download_status": {
+                          "allow_download": true
+                        },
+                        "media_results": {
+                          "result": {
+                            "media_key": "3_1919440650023632896"
+                          }
+                        }
+                      },
+                      {
+                        "display_url": "pic.x.com/0vi2fJxyaZ",
+                        "expanded_url": "https://x.com/gregisenberg/status/1919440655991841119/photo/1",
+                        "id_str": "1919440650027892736",
+                        "indices": [
+                          98,
+                          121
+                        ],
+                        "media_key": "3_1919440650027892736",
+                        "media_url_https": "https://pbs.twimg.com/media/GqM5GgBbgAA6fXh.jpg",
+                        "type": "photo",
+                        "url": "https://t.co/0vi2fJxyaZ",
+                        "ext_media_availability": {
+                          "status": "Available"
+                        },
+                        "features": {
+                          "large": {
+                            "faces": [
+                              {
+                                "x": 132,
+                                "y": 338,
+                                "h": 848,
+                                "w": 848
+                              }
+                            ]
+                          },
+                          "medium": {
+                            "faces": [
+                              {
+                                "x": 77,
+                                "y": 198,
+                                "h": 496,
+                                "w": 496
+                              }
+                            ]
+                          },
+                          "small": {
+                            "faces": [
+                              {
+                                "x": 43,
+                                "y": 112,
+                                "h": 281,
+                                "w": 281
+                              }
+                            ]
+                          },
+                          "orig": {
+                            "faces": [
+                              {
+                                "x": 132,
+                                "y": 338,
+                                "h": 848,
+                                "w": 848
+                              }
+                            ]
+                          }
+                        },
+                        "sizes": {
+                          "large": {
+                            "h": 2048,
+                            "w": 1152,
+                            "resize": "fit"
+                          },
+                          "medium": {
+                            "h": 1200,
+                            "w": 675,
+                            "resize": "fit"
+                          },
+                          "small": {
+                            "h": 680,
+                            "w": 383,
+                            "resize": "fit"
+                          },
+                          "thumb": {
+                            "h": 150,
+                            "w": 150,
+                            "resize": "crop"
+                          }
+                        },
+                        "original_info": {
+                          "height": 2048,
+                          "width": 1152,
+                          "focus_rects": [
+                            {
+                              "x": 0,
+                              "y": 753,
+                              "w": 1152,
+                              "h": 645
+                            },
+                            {
+                              "x": 0,
+                              "y": 499,
+                              "w": 1152,
+                              "h": 1152
+                            },
+                            {
+                              "x": 0,
+                              "y": 419,
+                              "w": 1152,
+                              "h": 1313
+                            },
+                            {
+                              "x": 51,
+                              "y": 0,
+                              "w": 1024,
+                              "h": 2048
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1152,
+                              "h": 2048
+                            }
+                          ]
+                        },
+                        "media_results": {
+                          "result": {
+                            "media_key": "3_1919440650027892736"
+                          }
+                        }
+                      }
+                    ],
+                    "symbols": [],
+                    "timestamps": [],
+                    "urls": [],
+                    "user_mentions": []
+                  },
+                  "extended_entities": {
+                    "media": [
+                      {
+                        "display_url": "pic.x.com/0vi2fJxyaZ",
+                        "expanded_url": "https://x.com/gregisenberg/status/1919440655991841119/photo/1",
+                        "id_str": "1919440650023632896",
+                        "indices": [
+                          98,
+                          121
+                        ],
+                        "media_key": "3_1919440650023632896",
+                        "media_url_https": "https://pbs.twimg.com/media/GqM5GgAagAAz2M7.jpg",
+                        "type": "photo",
+                        "url": "https://t.co/0vi2fJxyaZ",
+                        "ext_media_availability": {
+                          "status": "Available"
+                        },
+                        "features": {
+                          "large": {
+                            "faces": []
+                          },
+                          "medium": {
+                            "faces": []
+                          },
+                          "small": {
+                            "faces": []
+                          },
+                          "orig": {
+                            "faces": []
+                          }
+                        },
+                        "sizes": {
+                          "large": {
+                            "h": 2048,
+                            "w": 1152,
+                            "resize": "fit"
+                          },
+                          "medium": {
+                            "h": 1200,
+                            "w": 675,
+                            "resize": "fit"
+                          },
+                          "small": {
+                            "h": 680,
+                            "w": 383,
+                            "resize": "fit"
+                          },
+                          "thumb": {
+                            "h": 150,
+                            "w": 150,
+                            "resize": "crop"
+                          }
+                        },
+                        "original_info": {
+                          "height": 2048,
+                          "width": 1152,
+                          "focus_rects": [
+                            {
+                              "x": 0,
+                              "y": 1367,
+                              "w": 1152,
+                              "h": 645
+                            },
+                            {
+                              "x": 0,
+                              "y": 896,
+                              "w": 1152,
+                              "h": 1152
+                            },
+                            {
+                              "x": 0,
+                              "y": 735,
+                              "w": 1152,
+                              "h": 1313
+                            },
+                            {
+                              "x": 51,
+                              "y": 0,
+                              "w": 1024,
+                              "h": 2048
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1152,
+                              "h": 2048
+                            }
+                          ]
+                        },
+                        "allow_download_status": {
+                          "allow_download": true
+                        },
+                        "media_results": {
+                          "result": {
+                            "media_key": "3_1919440650023632896"
+                          }
+                        }
+                      },
+                      {
+                        "display_url": "pic.x.com/0vi2fJxyaZ",
+                        "expanded_url": "https://x.com/gregisenberg/status/1919440655991841119/photo/1",
+                        "id_str": "1919440650027892736",
+                        "indices": [
+                          98,
+                          121
+                        ],
+                        "media_key": "3_1919440650027892736",
+                        "media_url_https": "https://pbs.twimg.com/media/GqM5GgBbgAA6fXh.jpg",
+                        "type": "photo",
+                        "url": "https://t.co/0vi2fJxyaZ",
+                        "ext_media_availability": {
+                          "status": "Available"
+                        },
+                        "features": {
+                          "large": {
+                            "faces": [
+                              {
+                                "x": 132,
+                                "y": 338,
+                                "h": 848,
+                                "w": 848
+                              }
+                            ]
+                          },
+                          "medium": {
+                            "faces": [
+                              {
+                                "x": 77,
+                                "y": 198,
+                                "h": 496,
+                                "w": 496
+                              }
+                            ]
+                          },
+                          "small": {
+                            "faces": [
+                              {
+                                "x": 43,
+                                "y": 112,
+                                "h": 281,
+                                "w": 281
+                              }
+                            ]
+                          },
+                          "orig": {
+                            "faces": [
+                              {
+                                "x": 132,
+                                "y": 338,
+                                "h": 848,
+                                "w": 848
+                              }
+                            ]
+                          }
+                        },
+                        "sizes": {
+                          "large": {
+                            "h": 2048,
+                            "w": 1152,
+                            "resize": "fit"
+                          },
+                          "medium": {
+                            "h": 1200,
+                            "w": 675,
+                            "resize": "fit"
+                          },
+                          "small": {
+                            "h": 680,
+                            "w": 383,
+                            "resize": "fit"
+                          },
+                          "thumb": {
+                            "h": 150,
+                            "w": 150,
+                            "resize": "crop"
+                          }
+                        },
+                        "original_info": {
+                          "height": 2048,
+                          "width": 1152,
+                          "focus_rects": [
+                            {
+                              "x": 0,
+                              "y": 753,
+                              "w": 1152,
+                              "h": 645
+                            },
+                            {
+                              "x": 0,
+                              "y": 499,
+                              "w": 1152,
+                              "h": 1152
+                            },
+                            {
+                              "x": 0,
+                              "y": 419,
+                              "w": 1152,
+                              "h": 1313
+                            },
+                            {
+                              "x": 51,
+                              "y": 0,
+                              "w": 1024,
+                              "h": 2048
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1152,
+                              "h": 2048
+                            }
+                          ]
+                        },
+                        "media_results": {
+                          "result": {
+                            "media_key": "3_1919440650027892736"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "favorite_count": 351,
+                  "favorited": false,
+                  "full_text": "ITS REALLY NICE IN SAN FRANCISCO \n\nI HEAR SF ISNT DEAD?\n\nWHO WANTS TO MEET AT 4p AT DOLORES PARK? https://t.co/0vi2fJxyaZ",
+                  "is_quote_status": false,
+                  "lang": "en",
+                  "possibly_sensitive": false,
+                  "possibly_sensitive_editable": true,
+                  "quote_count": 2,
+                  "reply_count": 69,
+                  "retweet_count": 13,
+                  "retweeted": false,
+                  "user_id_str": "14642331",
+                  "id_str": "1919440655991841119"
+                },
+                "quick_promote_eligibility": {
+                  "eligibility": "IneligibleNotProfessional"
+                }
+              }
+            },
+            "tweetDisplayType": "Tweet"
+          },
+          "clientEventInfo": {
+            "component": "tweet",
+            "element": "tweet",
+            "details": {
+              "timelinesDetails": {
+                "injectionType": "RankedOrganicTweet",
+                "controllerData": "DAACDAABDAABCgABAAAAAAAAAAAKAAkQTHqKfpTwAAAAAAA="
+              }
+            }
+          }
+        }
+      },
+      {
+        "entryId": "profile-conversation-1921691440589570056-tweet-1919445040419766430",
+        "dispensable": true,
+        "item": {
+          "itemContent": {
+            "itemType": "TimelineTweet",
+            "__typename": "TimelineTweet",
+            "tweet_results": {
+              "result": {
+                "__typename": "Tweet",
+                "rest_id": "1919445040419766430",
+                "core": {
+                  "user_results": {
+                    "result": {
+                      "__typename": "User",
+                      "id": "VXNlcjoxNDY0MjMzMQ==",
+                      "rest_id": "14642331",
+                      "affiliates_highlighted_label": {},
+                      "has_graduated_access": true,
+                      "is_blue_verified": true,
+                      "legacy": {
+                        "following": true,
+                        "can_dm": true,
+                        "can_media_tag": true,
+                        "created_at": "Sat May 03 23:08:05 +0000 2008",
+                        "default_profile": false,
+                        "default_profile_image": false,
+                        "description": "I run a portfolio of internet companies. CEO: @latecheckoutplz we build companies like @meetLCA, @boringmarketer etc",
+                        "entities": {
+                          "description": {
+                            "urls": []
+                          },
+                          "url": {
+                            "urls": [
+                              {
+                                "display_url": "gregisenberg.com",
+                                "expanded_url": "http://gregisenberg.com/",
+                                "url": "https://t.co/hz3lcOfwEY",
+                                "indices": [
+                                  0,
+                                  23
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "fast_followers_count": 0,
+                        "favourites_count": 99338,
+                        "followers_count": 468779,
+                        "friends_count": 819,
+                        "has_custom_timelines": true,
+                        "is_translator": false,
+                        "listed_count": 7726,
+                        "location": "more →",
+                        "media_count": 2327,
+                        "name": "GREG ISENBERG",
+                        "normal_followers_count": 468779,
+                        "pinned_tweet_ids_str": [
+                          "1845255860559257671"
+                        ],
+                        "possibly_sensitive": false,
+                        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14642331/1722363147",
+                        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1577116785656139776/5mi0qgTz_normal.jpg",
+                        "profile_interstitial_type": "",
+                        "screen_name": "gregisenberg",
+                        "statuses_count": 57683,
+                        "translator_type": "none",
+                        "url": "https://t.co/hz3lcOfwEY",
+                        "verified": false,
+                        "want_retweets": true,
+                        "withheld_in_countries": []
+                      },
+                      "parody_commentary_fan_label": "None",
+                      "profile_image_shape": "Circle",
+                      "professional": {
+                        "rest_id": "1644527479804002307",
+                        "professional_type": "Creator",
+                        "category": []
+                      },
+                      "tipjar_settings": {
+                        "is_enabled": true,
+                        "cash_app_handle": "gregisenberg",
+                        "venmo_handle": "greg-isenberg"
+                      },
+                      "super_follow_eligible": true,
+                      "verification": {
+                        "verified": false
+                      }
+                    }
+                  }
+                },
+                "unmention_data": {},
+                "edit_control": {
+                  "edit_tweet_ids": [
+                    "1919445040419766430"
+                  ],
+                  "editable_until_msecs": "1746469933000",
+                  "is_edit_eligible": false,
+                  "edits_remaining": "5"
+                },
+                "is_translatable": false,
+                "views": {
+                  "count": "21100",
+                  "state": "EnabledWithCount"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "grok_analysis_button": true,
+                "legacy": {
+                  "bookmark_count": 1,
+                  "bookmarked": false,
+                  "created_at": "Mon May 05 17:32:13 +0000 2025",
+                  "conversation_id_str": "1919440655991841119",
+                  "display_text_range": [
+                    0,
+                    57
+                  ],
+                  "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "timestamps": [],
+                    "urls": [],
+                    "user_mentions": []
+                  },
+                  "favorite_count": 30,
+                  "favorited": false,
+                  "full_text": "OK 4p DOLORES PARK SEE YOU THERE\n\nshare this with friends",
+                  "in_reply_to_screen_name": "gregisenberg",
+                  "in_reply_to_status_id_str": "1919440655991841119",
+                  "in_reply_to_user_id_str": "14642331",
+                  "is_quote_status": false,
+                  "lang": "en",
+                  "quote_count": 0,
+                  "reply_count": 7,
+                  "retweet_count": 1,
+                  "retweeted": false,
+                  "user_id_str": "14642331",
+                  "id_str": "1919445040419766430"
+                },
+                "quick_promote_eligibility": {
+                  "eligibility": "IneligibleNotProfessional"
+                }
+              }
+            },
+            "tweetDisplayType": "Tweet"
+          },
+          "clientEventInfo": {
+            "component": "tweet",
+            "element": "tweet",
+            "details": {
+              "timelinesDetails": {
+                "injectionType": "RankedOrganicTweet",
+                "controllerData": "DAACDAABDAABCgABAAAAAAAAAAAKAAkQTHqKfpTwAAAAAAA="
+              }
+            }
+          }
+        }
+      },
+      {
+        "entryId": "profile-conversation-1921691440589570056-tweet-1919524177016729721",
+        "dispensable": false,
+        "item": {
+          "itemContent": {
+            "itemType": "TimelineTweet",
+            "__typename": "TimelineTweet",
+            "tweet_results": {
+              "result": {
+                "__typename": "Tweet",
+                "rest_id": "1919524177016729721",
+                "core": {
+                  "user_results": {
+                    "result": {
+                      "__typename": "User",
+                      "id": "VXNlcjoxNDY0MjMzMQ==",
+                      "rest_id": "14642331",
+                      "affiliates_highlighted_label": {},
+                      "has_graduated_access": true,
+                      "is_blue_verified": true,
+                      "legacy": {
+                        "following": true,
+                        "can_dm": true,
+                        "can_media_tag": true,
+                        "created_at": "Sat May 03 23:08:05 +0000 2008",
+                        "default_profile": false,
+                        "default_profile_image": false,
+                        "description": "I run a portfolio of internet companies. CEO: @latecheckoutplz we build companies like @meetLCA, @boringmarketer etc",
+                        "entities": {
+                          "description": {
+                            "urls": []
+                          },
+                          "url": {
+                            "urls": [
+                              {
+                                "display_url": "gregisenberg.com",
+                                "expanded_url": "http://gregisenberg.com/",
+                                "url": "https://t.co/hz3lcOfwEY",
+                                "indices": [
+                                  0,
+                                  23
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "fast_followers_count": 0,
+                        "favourites_count": 99338,
+                        "followers_count": 468779,
+                        "friends_count": 819,
+                        "has_custom_timelines": true,
+                        "is_translator": false,
+                        "listed_count": 7726,
+                        "location": "more →",
+                        "media_count": 2327,
+                        "name": "GREG ISENBERG",
+                        "normal_followers_count": 468779,
+                        "pinned_tweet_ids_str": [
+                          "1845255860559257671"
+                        ],
+                        "possibly_sensitive": false,
+                        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14642331/1722363147",
+                        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1577116785656139776/5mi0qgTz_normal.jpg",
+                        "profile_interstitial_type": "",
+                        "screen_name": "gregisenberg",
+                        "statuses_count": 57683,
+                        "translator_type": "none",
+                        "url": "https://t.co/hz3lcOfwEY",
+                        "verified": false,
+                        "want_retweets": true,
+                        "withheld_in_countries": []
+                      },
+                      "parody_commentary_fan_label": "None",
+                      "profile_image_shape": "Circle",
+                      "professional": {
+                        "rest_id": "1644527479804002307",
+                        "professional_type": "Creator",
+                        "category": []
+                      },
+                      "tipjar_settings": {
+                        "is_enabled": true,
+                        "cash_app_handle": "gregisenberg",
+                        "venmo_handle": "greg-isenberg"
+                      },
+                      "super_follow_eligible": true,
+                      "verification": {
+                        "verified": false
+                      }
+                    }
+                  }
+                },
+                "unmention_data": {},
+                "edit_control": {
+                  "edit_tweet_ids": [
+                    "1919524177016729721"
+                  ],
+                  "editable_until_msecs": "1746488801000",
+                  "is_edit_eligible": false,
+                  "edits_remaining": "5"
+                },
+                "is_translatable": false,
+                "views": {
+                  "count": "15733",
+                  "state": "EnabledWithCount"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "grok_analysis_button": true,
+                "legacy": {
+                  "bookmark_count": 1,
+                  "bookmarked": false,
+                  "created_at": "Mon May 05 22:46:41 +0000 2025",
+                  "conversation_id_str": "1919440655991841119",
+                  "display_text_range": [
+                    0,
+                    64
+                  ],
+                  "entities": {
+                    "hashtags": [],
+                    "media": [
+                      {
+                        "display_url": "pic.x.com/rXi9cdvMqw",
+                        "expanded_url": "https://x.com/gregisenberg/status/1919524177016729721/photo/1",
+                        "id_str": "1919524168808456192",
+                        "indices": [
+                          65,
+                          88
+                        ],
+                        "media_key": "3_1919524168808456192",
+                        "media_url_https": "https://pbs.twimg.com/media/GqOFD7ua4AA9HZW.jpg",
+                        "type": "photo",
+                        "url": "https://t.co/rXi9cdvMqw",
+                        "ext_media_availability": {
+                          "status": "Available"
+                        },
+                        "features": {
+                          "large": {
+                            "faces": []
+                          },
+                          "medium": {
+                            "faces": []
+                          },
+                          "small": {
+                            "faces": []
+                          },
+                          "orig": {
+                            "faces": []
+                          }
+                        },
+                        "sizes": {
+                          "large": {
+                            "h": 2048,
+                            "w": 1536,
+                            "resize": "fit"
+                          },
+                          "medium": {
+                            "h": 1200,
+                            "w": 900,
+                            "resize": "fit"
+                          },
+                          "small": {
+                            "h": 680,
+                            "w": 510,
+                            "resize": "fit"
+                          },
+                          "thumb": {
+                            "h": 150,
+                            "w": 150,
+                            "resize": "crop"
+                          }
+                        },
+                        "original_info": {
+                          "height": 2048,
+                          "width": 1536,
+                          "focus_rects": [
+                            {
+                              "x": 0,
+                              "y": 542,
+                              "w": 1536,
+                              "h": 860
+                            },
+                            {
+                              "x": 0,
+                              "y": 204,
+                              "w": 1536,
+                              "h": 1536
+                            },
+                            {
+                              "x": 0,
+                              "y": 97,
+                              "w": 1536,
+                              "h": 1751
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1024,
+                              "h": 2048
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1536,
+                              "h": 2048
+                            }
+                          ]
+                        },
+                        "media_results": {
+                          "result": {
+                            "media_key": "3_1919524168808456192"
+                          }
+                        }
+                      }
+                    ],
+                    "symbols": [],
+                    "timestamps": [],
+                    "urls": [],
+                    "user_mentions": []
+                  },
+                  "extended_entities": {
+                    "media": [
+                      {
+                        "display_url": "pic.x.com/rXi9cdvMqw",
+                        "expanded_url": "https://x.com/gregisenberg/status/1919524177016729721/photo/1",
+                        "id_str": "1919524168808456192",
+                        "indices": [
+                          65,
+                          88
+                        ],
+                        "media_key": "3_1919524168808456192",
+                        "media_url_https": "https://pbs.twimg.com/media/GqOFD7ua4AA9HZW.jpg",
+                        "type": "photo",
+                        "url": "https://t.co/rXi9cdvMqw",
+                        "ext_media_availability": {
+                          "status": "Available"
+                        },
+                        "features": {
+                          "large": {
+                            "faces": []
+                          },
+                          "medium": {
+                            "faces": []
+                          },
+                          "small": {
+                            "faces": []
+                          },
+                          "orig": {
+                            "faces": []
+                          }
+                        },
+                        "sizes": {
+                          "large": {
+                            "h": 2048,
+                            "w": 1536,
+                            "resize": "fit"
+                          },
+                          "medium": {
+                            "h": 1200,
+                            "w": 900,
+                            "resize": "fit"
+                          },
+                          "small": {
+                            "h": 680,
+                            "w": 510,
+                            "resize": "fit"
+                          },
+                          "thumb": {
+                            "h": 150,
+                            "w": 150,
+                            "resize": "crop"
+                          }
+                        },
+                        "original_info": {
+                          "height": 2048,
+                          "width": 1536,
+                          "focus_rects": [
+                            {
+                              "x": 0,
+                              "y": 542,
+                              "w": 1536,
+                              "h": 860
+                            },
+                            {
+                              "x": 0,
+                              "y": 204,
+                              "w": 1536,
+                              "h": 1536
+                            },
+                            {
+                              "x": 0,
+                              "y": 97,
+                              "w": 1536,
+                              "h": 1751
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1024,
+                              "h": 2048
+                            },
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "w": 1536,
+                              "h": 2048
+                            }
+                          ]
+                        },
+                        "media_results": {
+                          "result": {
+                            "media_key": "3_1919524168808456192"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "favorite_count": 56,
+                  "favorited": false,
+                  "full_text": "Hanging by the picnic table in the middle of Dolores \n\nsee yaaaa https://t.co/rXi9cdvMqw",
+                  "in_reply_to_screen_name": "gregisenberg",
+                  "in_reply_to_status_id_str": "1919445040419766430",
+                  "in_reply_to_user_id_str": "14642331",
+                  "is_quote_status": false,
+                  "lang": "en",
+                  "possibly_sensitive": false,
+                  "possibly_sensitive_editable": true,
+                  "quote_count": 1,
+                  "reply_count": 9,
+                  "retweet_count": 0,
+                  "retweeted": false,
+                  "user_id_str": "14642331",
+                  "id_str": "1919524177016729721"
+                },
+                "quick_promote_eligibility": {
+                  "eligibility": "IneligibleNotProfessional"
+                }
+              }
+            },
+            "tweetDisplayType": "Tweet"
+          },
+          "clientEventInfo": {
+            "component": "tweet",
+            "element": "tweet",
+            "details": {
+              "timelinesDetails": {
+                "injectionType": "RankedOrganicTweet",
+                "controllerData": "DAACDAABDAABCgABAAAAAAAAAAAKAAkQTHqKfpTwAAAAAAA="
+              }
+            }
+          }
+        }
+      }
+    ],
+    "metadata": {
+      "conversationMetadata": {
+        "allTweetIds": [
+          "1919440655991841119",
+          "1919445040419766430",
+          "1919524177016729721"
+        ],
+        "enableDeduplication": true
+      }
+    },
+    "displayType": "VerticalConversation",
+    "clientEventInfo": {
+      "component": "suggest_ranked_organic_tweet",
+      "details": {
+        "timelinesDetails": {
+          "injectionType": "RankedOrganicTweet",
+          "controllerData": "DAACDAABDAABCgABAAAAAAAAAAAKAAkQTHqKfpTwAAAAAAA="
+        }
+      }
+    }
+  }
+}

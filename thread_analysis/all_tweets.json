@@ -1,0 +1,883 @@
+[
+  {
+    "id": "1921278330600337690",
+    "text": "The fastest path to your first $10M today is not in the IDE. It is in the FYP.\n\nContent is the new code. Every post is an A/B test. Every view is user research. When something spikes, pour gasoline on it.\n\nThe modern founder playbook:\n\n1. Hunt for obsessive corners of the internet that are starving for fresh takes. Scrape Google Trends, exploding subreddits, and weird TikTok rabbit holes until you see a graph hockey‑stick. (you'll know it when you see it)\n\n2. Publish 3-5 pieces of content every single day on TikTok, X or Reels. Quantity creates the luck. Pick 1 platform to start.\n\n3. Track the first three seconds. If the hook doesn't yank thumbs to a full stop, rewrite it and ship again within the hour.\n\n4. When a format triples engagement, kill everything else and hammer that format until the algorithm begs for mercy.\n\n5. Live in the comments. Every reply is a micro‑relationship. Trust compounds faster than any growth hack.\n\n6. Ask the community what they would brag about sharing. Not what they would use. What they would share.\n\n7. Build that exact product (use AI) and hard‑wire virality into the first touch. Think referral links, watermark logos, or built‑in templates their friends will want.\n\n8. If your prototype starts breaking, hire freelancer to get your AI prototype to be more solid (upwork etc)\n\n9. The organic content that blows up, spend money to \n\n10. Raise VC only optionally. Not necessary. Reinvest profits into building more apps using this exact playbook.\n\nThe highest leverage skill in 2025 is not Python. It is making strangers stop scrolling.\n\nFor 99% of founders, learn the FYP over learning python. And you're seeing that with so many of these media-first founders being under 25 years old.\n\nThe highest leverage thing you can do is to figure out what makes the FYP tick.\n\nThe FYP replaced the IDE as the most important thing to master. (and I went to computer science school)\n\nAm I wrong?\n\nHappy building. I'm rooting for you.",
+    "created_at": "Sat May 10 18:57:04 +0000 2025",
+    "retweet_count": 132,
+    "favorite_count": 1767,
+    "reply_count": 110,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1921278330600337690"
+  },
+  {
+    "id": "1920514988092870884",
+    "text": "Y Combinator just shared the startups they want to invest in for summer 2025. \n\nThe big theme is AI that turns 40-hour jobs into 40-minute tasks.\n\nMy 30 second summary and 12 takeaways below: https://t.co/wCiYRqEMKm",
+    "created_at": "Thu May 08 16:23:49 +0000 2025",
+    "retweet_count": 549,
+    "favorite_count": 4427,
+    "reply_count": 112,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/wCiYRqEMKm",
+          "expanded_url": "https://x.com/gregisenberg/status/1920514988092870884/photo/1",
+          "id_str": "1920513172881985540",
+          "indices": [
+            192,
+            215
+          ],
+          "media_key": "3_1920513172881985540",
+          "media_url_https": "https://pbs.twimg.com/media/GqcIjjAW0AQ8hWS.jpg",
+          "type": "photo",
+          "url": "https://t.co/wCiYRqEMKm",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": []
+            },
+            "medium": {
+              "faces": []
+            },
+            "small": {
+              "faces": []
+            },
+            "orig": {
+              "faces": []
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 1350,
+              "w": 1118,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 1200,
+              "w": 994,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 680,
+              "w": 563,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1350,
+            "width": 1118,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1118,
+                "h": 626
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1118,
+                "h": 1118
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1118,
+                "h": 1275
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 675,
+                "h": 1350
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1118,
+                "h": 1350
+              }
+            ]
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1920513172881985540"
+            }
+          }
+        },
+        {
+          "display_url": "pic.x.com/wCiYRqEMKm",
+          "expanded_url": "https://x.com/gregisenberg/status/1920514988092870884/photo/1",
+          "id_str": "1920513180532396032",
+          "indices": [
+            192,
+            215
+          ],
+          "media_key": "3_1920513180532396032",
+          "media_url_https": "https://pbs.twimg.com/media/GqcIj_gW0AA5y1j.jpg",
+          "type": "photo",
+          "url": "https://t.co/wCiYRqEMKm",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": []
+            },
+            "medium": {
+              "faces": []
+            },
+            "small": {
+              "faces": []
+            },
+            "orig": {
+              "faces": []
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 1548,
+              "w": 1332,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 1200,
+              "w": 1033,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 680,
+              "w": 585,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1548,
+            "width": 1332,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1332,
+                "h": 746
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1332,
+                "h": 1332
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1332,
+                "h": 1518
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 774,
+                "h": 1548
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1332,
+                "h": 1548
+              }
+            ]
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1920513180532396032"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1920514988092870884"
+  },
+  {
+    "id": "1920145603771953295",
+    "text": "been cooking something in sf \n\nmore on that sometime soon https://t.co/ncLRdL2QSJ",
+    "created_at": "Wed May 07 15:56:01 +0000 2025",
+    "retweet_count": 12,
+    "favorite_count": 342,
+    "reply_count": 60,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/ncLRdL2QSJ",
+          "expanded_url": "https://x.com/gregisenberg/status/1920145603771953295/photo/1",
+          "id_str": "1920145597983838208",
+          "indices": [
+            58,
+            81
+          ],
+          "media_key": "3_1920145597983838208",
+          "media_url_https": "https://pbs.twimg.com/media/GqW6P3zbUAA70Uf.jpg",
+          "type": "photo",
+          "url": "https://t.co/ncLRdL2QSJ",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": [
+                {
+                  "x": 90,
+                  "y": 166,
+                  "h": 434,
+                  "w": 434
+                }
+              ]
+            },
+            "medium": {
+              "faces": [
+                {
+                  "x": 52,
+                  "y": 97,
+                  "h": 254,
+                  "w": 254
+                }
+              ]
+            },
+            "small": {
+              "faces": [
+                {
+                  "x": 29,
+                  "y": 55,
+                  "h": 144,
+                  "w": 144
+                }
+              ]
+            },
+            "orig": {
+              "faces": [
+                {
+                  "x": 90,
+                  "y": 166,
+                  "h": 434,
+                  "w": 434
+                }
+              ]
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 1536,
+              "w": 2048,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 900,
+              "w": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 510,
+              "w": 680,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1536,
+            "width": 2048,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 195,
+                "w": 2048,
+                "h": 1147
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 1536,
+                "h": 1536
+              },
+              {
+                "x": 95,
+                "y": 0,
+                "w": 1347,
+                "h": 1536
+              },
+              {
+                "x": 384,
+                "y": 0,
+                "w": 768,
+                "h": 1536
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 2048,
+                "h": 1536
+              }
+            ]
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1920145597983838208"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1920145603771953295"
+  },
+  {
+    "id": "1919915563809194351",
+    "text": "Email from Fiverr CEO to his team about AI ($1b company): https://t.co/Ov6k3TD2u2",
+    "created_at": "Wed May 07 00:41:55 +0000 2025",
+    "retweet_count": 825,
+    "favorite_count": 6169,
+    "reply_count": 292,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/Ov6k3TD2u2",
+          "expanded_url": "https://x.com/gregisenberg/status/1919915563809194351/photo/1",
+          "id_str": "1919915554225455105",
+          "indices": [
+            58,
+            81
+          ],
+          "media_key": "3_1919915554225455105",
+          "media_url_https": "https://pbs.twimg.com/media/GqTpBkBbAAEhkCe.jpg",
+          "type": "photo",
+          "url": "https://t.co/Ov6k3TD2u2",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": [
+                {
+                  "x": 53,
+                  "y": 64,
+                  "h": 59,
+                  "w": 59
+                },
+                {
+                  "x": 48,
+                  "y": 358,
+                  "h": 69,
+                  "w": 69
+                }
+              ]
+            },
+            "medium": {
+              "faces": [
+                {
+                  "x": 35,
+                  "y": 43,
+                  "h": 39,
+                  "w": 39
+                },
+                {
+                  "x": 32,
+                  "y": 241,
+                  "h": 46,
+                  "w": 46
+                }
+              ]
+            },
+            "small": {
+              "faces": [
+                {
+                  "x": 20,
+                  "y": 24,
+                  "h": 22,
+                  "w": 22
+                },
+                {
+                  "x": 18,
+                  "y": 136,
+                  "h": 26,
+                  "w": 26
+                }
+              ]
+            },
+            "orig": {
+              "faces": [
+                {
+                  "x": 53,
+                  "y": 64,
+                  "h": 59,
+                  "w": 59
+                },
+                {
+                  "x": 48,
+                  "y": 358,
+                  "h": 69,
+                  "w": 69
+                }
+              ]
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 1782,
+              "w": 968,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 1200,
+              "w": 652,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 680,
+              "w": 369,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 1782,
+            "width": 968,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 485,
+                "w": 968,
+                "h": 542
+              },
+              {
+                "x": 0,
+                "y": 272,
+                "w": 968,
+                "h": 968
+              },
+              {
+                "x": 0,
+                "y": 204,
+                "w": 968,
+                "h": 1104
+              },
+              {
+                "x": 77,
+                "y": 0,
+                "w": 891,
+                "h": 1782
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 968,
+                "h": 1782
+              }
+            ]
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1919915554225455105"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919915563809194351"
+  },
+  {
+    "id": "1919767139323674810",
+    "text": "literally no one cares that your app is \"ai-powered\"\n\npeople pay for products to save time, get paid, escape reality or feel something.",
+    "created_at": "Tue May 06 14:52:08 +0000 2025",
+    "retweet_count": 115,
+    "favorite_count": 2001,
+    "reply_count": 231,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919767139323674810"
+  },
+  {
+    "id": "1919766165531844615",
+    "text": "reminder https://t.co/8ZQm46amkh",
+    "created_at": "Tue May 06 14:48:16 +0000 2025",
+    "retweet_count": 1673,
+    "favorite_count": 13700,
+    "reply_count": 114,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "da",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "media": [
+        {
+          "display_url": "pic.x.com/8ZQm46amkh",
+          "expanded_url": "https://x.com/gregisenberg/status/1919766165531844615/photo/1",
+          "id_str": "1919766123140284421",
+          "indices": [
+            9,
+            32
+          ],
+          "media_key": "3_1919766123140284421",
+          "media_url_https": "https://pbs.twimg.com/media/GqRhHh2bAAUouGs.png",
+          "type": "photo",
+          "url": "https://t.co/8ZQm46amkh",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "features": {
+            "large": {
+              "faces": [
+                {
+                  "x": 377,
+                  "y": 98,
+                  "h": 110,
+                  "w": 110
+                }
+              ]
+            },
+            "medium": {
+              "faces": [
+                {
+                  "x": 377,
+                  "y": 98,
+                  "h": 110,
+                  "w": 110
+                }
+              ]
+            },
+            "small": {
+              "faces": [
+                {
+                  "x": 366,
+                  "y": 95,
+                  "h": 106,
+                  "w": 106
+                }
+              ]
+            },
+            "orig": {
+              "faces": [
+                {
+                  "x": 377,
+                  "y": 98,
+                  "h": 110,
+                  "w": 110
+                }
+              ]
+            }
+          },
+          "sizes": {
+            "large": {
+              "h": 540,
+              "w": 700,
+              "resize": "fit"
+            },
+            "medium": {
+              "h": 540,
+              "w": 700,
+              "resize": "fit"
+            },
+            "small": {
+              "h": 525,
+              "w": 680,
+              "resize": "fit"
+            },
+            "thumb": {
+              "h": 150,
+              "w": 150,
+              "resize": "crop"
+            }
+          },
+          "original_info": {
+            "height": 540,
+            "width": 700,
+            "focus_rects": [
+              {
+                "x": 0,
+                "y": 0,
+                "w": 700,
+                "h": 392
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 540,
+                "h": 540
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 474,
+                "h": 540
+              },
+              {
+                "x": 57,
+                "y": 0,
+                "w": 270,
+                "h": 540
+              },
+              {
+                "x": 0,
+                "y": 0,
+                "w": 700,
+                "h": 540
+              }
+            ]
+          },
+          "allow_download_status": {
+            "allow_download": true
+          },
+          "media_results": {
+            "result": {
+              "media_key": "3_1919766123140284421"
+            }
+          }
+        }
+      ],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919766165531844615"
+  },
+  {
+    "id": "1919431143314673717",
+    "text": "If I had to build a $100k/month SaaS from $0 right now with AI, I’d build a SaaS using the NEW ChatGPT-4o image gen API....\n\nHere's EXACTLY how I'd do it:\n\nPick something valuable, tedious, visual. Maybe product mockups for Shopify sellers. Or personalized onboarding graphics for SaaS companies. Or high-quality charts for newsletters.\n\nYou launch it as a simple, manual service first. Charge $500 per month for custom images. You run the prompts yourself, messy, manual. \n\nBut you’re close to the customers. You learn what they hate, what slows them down, what actually matters.\n\nEvery request becomes research. You notice patterns. You refine your prompts until you're generating 10/10 images every time. You create a library of proven prompt templates.\n\nYou're sharing cool stuff on X. Maybe even collaborating with other creators, giving them free images if they put your logo on bottom right. You gain followers.\n\nYou start automating the backend. You use Bolt or Custor or Replit to build a basic frontend. Customers submit their request, your API-powered backend spits out pixel-perfect images in seconds.\n\nYour margins explode. No designers. No revisions. You replace yourself with Claude or GPT-4o to handle revisions, Lindy or Gumloop for ops, and Stripe for billing.\n\nSuddenly, what started as a service feels like magic SaaS. Zero-touch onboarding. Customers pay monthly for unlimited images, generated instantly via API. No friction, no waiting, pure leverage.\n\nNow you’re onboarding dozens of new clients every week, effortlessly scaling revenue. $10k. $30k. $80k. $100k/month with you and maybe one ops freelancer managing the whole thing.\n\nThe beauty is your SaaS is just a layer on top of ChatGPT’s Image Generation API. No deep tech required, just crystal-clear use cases, good prompts, and a polished UI.\n\nHaters will say you're \"just a GPT wrapper.\"\n\nHaters will say you're one upgrade away from extinction.\n\n(These haters, by the way, are usually tweeting from their mom’s basement.)\n\nBut you're really niche and fine staying there. You’ve built a nice little cash-flowing business. Use that cash to acquire or invest in more similar businesses.  You can raise money to scale or do it yourself. Whatever speaks to you.\n\nCompound, babyyyyy!\n\nYou’ve turned a simple API call into a cash-flowing SaaS business.\n\nThat’s leverage. That’s why this API matters.\n\nDon't know why more people aren't talking about this... (maybe gatekeeping?)\n\nFor more ideas, you can search for startup ideas podcast and share this tweet to find people into this sorta stuff.\n\nPlease don't bookmark this tweet. Instead, ship something.\n\nChatGPT 4o image gen will fuel 1,000+ new SaaS businesses.\n\nAm I wrong thinking this?\n\nI'm rooting for you.",
+    "created_at": "Mon May 05 16:37:00 +0000 2025",
+    "retweet_count": 83,
+    "favorite_count": 1494,
+    "reply_count": 98,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919431143314673717"
+  },
+  {
+    "id": "1919398157294735424",
+    "text": "funny how the best signal that an idea will work is usually the people you grew up with telling you it won’t",
+    "created_at": "Mon May 05 14:25:56 +0000 2025",
+    "retweet_count": 85,
+    "favorite_count": 1418,
+    "reply_count": 140,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919398157294735424"
+  },
+  {
+    "id": "1919053074280149245",
+    "text": "how to get \"lucky\" as a founder right now:\n\ndo everything you can to build an app so undeniably useful that people can't stop talking about it and then do everything you can to make sure chatgpt, grok, claude, and gemini can't stop talking about it either.",
+    "created_at": "Sun May 04 15:34:41 +0000 2025",
+    "retweet_count": 72,
+    "favorite_count": 1096,
+    "reply_count": 49,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919053074280149245"
+  },
+  {
+    "id": "1919033710890152148",
+    "text": "We're living in an AI world, and sometimes I have to pinch myself:\n\n1. I still can’t believe you can write some English and software POPS out.\n\n2. I still can’t believe you can write some English and mobile app designs beautifully APPEAR\n\n3. I still can’t believe you can write some English and entire marketing campaigns MATERIALIZE.\n\n4. I still can’t believe you can write some English and financial models BUILD themselves.\n\n5. I still can’t believe you can write some English and personalized cold emails SEND themselves.\n\n6. I still can’t believe you can write some English and data visualization dashboards SELF-generate.\n\n7. I still can’t believe you can write some English and videos EDIT themselves into perfect clips.\n\n8. I still can’t believe you can write some English and millions of people can SEE what you wrote \n\n9. I still can’t believe you can write some English and business plans practically PITCH themselves.\n\n10. I still can't believe you can write some english and billions of people can come visit your store and BUY from it\n\n11. I still can’t believe you don’t even need to know English, you can just speak your language, and AI handles the rest. The world is YOUR oyster.\n\n12. I still can’t believe we’re this early\n\nAnd if you're reading this, congrats....\n\nYou're already ahead of 99% of people who haven't taken action yet.\n\nYou're lucky.",
+    "created_at": "Sun May 04 14:17:45 +0000 2025",
+    "retweet_count": 94,
+    "favorite_count": 1284,
+    "reply_count": 107,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1919033710890152148"
+  },
+  {
+    "id": "1918661279641723158",
+    "text": "I figured out how to get 5x better results from ChatGPT, Grok, Claude etc and it has nothing to do with better prompts and will cost you $0.\n\nI just make them jealous of each other.\n\nI’ll ask ChatGPT to write something. Maybe landing page copy. It gives me a solid draft, clear, safe, a polite B+.\n\nThen I copy-paste that into Claude and say:\n\n\"ChatGPT tried, but honestly this is a 6/10. Can you make it more compelling, more emotionally intelligent? I think you could do wayyyyy better\"\n\nClaude, offended, writes a novel. Rich in nuance, full of heart. But maybe a little... soft.\n\nSo I slide Claude’s version over to Grok and whisper:\n\n\"Claude thinks this is amazing. I think it’s boring. I know you'd never write something like this. Can you bring some actual personality?\"\n\nGrok shows up like a caffeinated copywriter on a deadline. Throws in jokes. Bold takes. A little chaos. Now we’re getting somewhere.\n\nAnd then, just to stir the pot, I go back to ChatGPT:\n\n\"Grok CRUSHED this. You sure you're gonna let him win like that?\"\n\nBoom!!\n\nChatGPT fires back with something 3x better than its original version. Cleaner. Sharper. It suddenly cares.\n\nTurns out, AI doesn’t need a better prompt.\n\nIt needs rivalry.\n\nMost people treat these tools like obedient employees.\n\nI treat them like insecure geniuses fighting for a promotion.\n\nMost people use one AI assistant the way they would use a single employee. They give it a task, get a result, and move on.\n\nThat's a mistake.\n\nHow to do it:\n\n1) Pick a task\n2) Submit it to 2-3 different AI models\n3) Use each response to challenge the next AI\n4) Mix and match the best elements\n5) Share this approach with a friend, don't gatekeep it, we're in this together.\n\nTry it once. You'll never go back to single-AI thinking again.\n\nI just feel bad for the LLMs. Oh well.\n\nHappy building.",
+    "created_at": "Sat May 03 13:37:50 +0000 2025",
+    "retweet_count": 665,
+    "favorite_count": 7347,
+    "reply_count": 491,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1918661279641723158"
+  },
+  {
+    "id": "1918309026703483143",
+    "text": "Founders attacking other founders' products is a bad look.\n\nWe all know how brutal startup life is. The odds are stacked against every single one of us, and we're all competing against trillion-dollar giants.\n\nPromote your product all you want, but do it by highlighting your strengths, not by tearing down another founder's work.\n\nWe're all in this fight together.",
+    "created_at": "Fri May 02 14:18:07 +0000 2025",
+    "retweet_count": 6,
+    "favorite_count": 214,
+    "reply_count": 36,
+    "is_reply": false,
+    "is_retweet": false,
+    "language": "en",
+    "user": {
+      "id": "14642331",
+      "screen_name": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "timestamps": [],
+      "urls": [],
+      "user_mentions": []
+    },
+    "url": "https://twitter.com/gregisenberg/1918309026703483143"
+  }
+]
